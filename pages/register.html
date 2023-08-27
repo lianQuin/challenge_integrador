@@ -10,25 +10,20 @@
 <header>
     <nav>
         <picture>
-            <a href="./index.html"></a>
+            <a href="../index.html"></a>
             <img src="..\img\branding\logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
         </picture>
         <ul>
           <li>
-            <a href="../pages/shop.html">SHOP</a>
+            <a href="../pages/carrito.html">VER TIENDA</a>
           </li>
           <li>
-            <a href="../pages/contacto.html">CONTACTO</a>
+            <a href="../pages/admin.html">ADMIN</a>
           </li>
           <li>
-            <a href="../pages/login.html">LOGIN</a>
+            <a href="../index.html">SALIR</a>
           </li>
-          <li>
-            <a href="../pages/carrito.html">
-            <img src="..\img\icons\cart-icon.svg" alt="icono de carrito">
-            </a>
-            
-          </li>
+          
         </ul>
     </nav>
 </header>
@@ -39,16 +34,78 @@
         <h1> CREA TU CUENTA</h1>
    
 <h2>Completa el formulario para ser parte del mundo de los Funkos</h2>
-Nombre:
-John
-Apellido:
-Doe
-Email:
-johndoe@correo.com
-Contraseña:
-Repita Contraseña:
-Registrar
-Acepto Términos y Condiciones
+<h1>Formulario</h1>
+
+    <form action="" method="get" enctype="application/x-www-form-urlencoded">
+      <div>
+        <label for="nombre">Nombre: </label>
+        <input
+          required
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="John"
+          
+          readonly
+        />
+        <label for="apellido">Apellido: </label>
+        <input
+          required
+          type="text"
+          name="apellido"
+          id="apellido"
+          placeholder="Doe"
+        
+          readonly
+        />
+        <label for="email">Email: </label>
+        <input
+          required
+          type="text"
+          name="email"
+          id="email"
+          placeholder="johndoe@correo.com"
+        
+          readonly
+        />
+      </div>
+
+      <div>
+        <label for="password">Contraseña: </label>
+        <input type="password" name="password" id="password" />
+
+        <label for="password">Repita contraseña: </label>
+        <input type="password" name="password" id="password" />
+      </div>
+
+      <div>
+    
+        <label for =" terminosycondiciones" >Terminos y condiciones: </label>
+        <select name=" acepto" id =" acepto" >
+        
+          <option  value ="si " >si</option >
+          <option  value =" no" > no</option >
+      
+        </select>
+      </div>
+
+      <!-- <input type="submit" value="Enviar"> -->
+      <button type="submit">Registrar</button>
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
 </main>
 <footer>
 
