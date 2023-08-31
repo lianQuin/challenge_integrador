@@ -51,6 +51,24 @@ nav {
     color: var(--color-2);
 }
 
+.banner-text h3{
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.banner-text a{
+    width: 50%;
+    margin-top: 25px;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-weight: 700;
+    border-radius: 50px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
 .banner-img{
     width: 100%;
     position: absolute;
@@ -59,4 +77,31 @@ nav {
 
 .banner-img img{
     width: 100%;
+    filter: brightness(0.5);
+}
+
+section.producto{
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto article{
+    width: 100%;
+}
+
+.producto article h3{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.producto article p{
+    margin-bottom: 15px;
+}
+
+.producto:nth-child(3n){
+    flex-direction: row-reverse;
 }
