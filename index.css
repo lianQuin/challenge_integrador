@@ -3,6 +3,7 @@
     --color-2: #FFFFFF;
     --color-3: #FF3333;
     --color-4: #111111;
+    --color-5:#1D84B5;
 }
 
 * {
@@ -80,9 +81,12 @@ nav {
     filter: brightness(0.5);
 }
 
+.cuerpo-cont{
+    padding: 100px;
+}
+
 section.producto{
     width: 100%;
-    padding: 0px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +105,7 @@ section.producto{
     
 }
 
-.producto:nth-child(3n){
+.producto:nth-child(2n){
     flex-direction: row-reverse;
 }
 
@@ -121,4 +125,82 @@ section.producto{
     border-radius: 50px;
     font-size: 1.2em;
     text-decoration: none;
+}
+
+.ultimos-lanzamientos h2{
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.ultimos-lanzamientos ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.ultimos-lanzamientos ul li article{
+    position: relative;
+}
+
+.ultimos-lanzamientos ul li img{
+    width: 352px;
+}
+
+
+.nuevo{
+    position: absolute;
+    top: 0; right: 0;
+    font-size: 0.8em;
+    padding: 6px 12px;
+    color: var(--color-2);
+    background-color: var(--color-3);
+}
+
+.lanzamiento-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.lanzamiento-info p{
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.lanzamiento-info h5{
+    color: var(--color-5);
+    font-weight: 700;
+}
+
+footer section{
+    width: 100%;
+    height: 343px;
+    background-color: var(--color-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+    justify-content: center;
+    list-style: none;
+}
+
+footer section ul li a{
+    text-decoration: none;
+    color: var(--color-2);
+    font-size: 1.2em;
+}
+
+footer section p{
+    align-self: self-end;
+    margin-bottom: 20px;
+    color: var(--color-2);
+    font-size: 1.2em;
 }
