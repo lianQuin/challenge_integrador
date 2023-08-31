@@ -90,18 +90,35 @@ section.producto{
 
 .producto article{
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .producto article h3{
     font-size: 2em;
     font-weight: 500;
     margin-bottom: 5px;
-}
-
-.producto article p{
-    margin-bottom: 15px;
+    
 }
 
 .producto:nth-child(3n){
     flex-direction: row-reverse;
+}
+
+.producto span{
+    border: 2px solid var(--color-3);
+    margin: 15px 0px;
+}
+
+.producto a{
+    width: 45%;
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-weight: 500;
+    border-radius: 50px;
+    font-size: 1.2em;
+    text-decoration: none;
 }
