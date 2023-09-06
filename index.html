@@ -9,23 +9,34 @@
 <body>
   <!--Inicio header-->
     <header>
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="./index.html"></a>
                 <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
             </picture>
-            <ul class="nav-bar">
-              <li>
-                <a href="./pages/shop.html">SHOP</a>
+            <ul class="navbar__menu">
+              <li class="navbar__item with-submenu">
+                <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Funkos</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Remeras</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Llaveros</a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="./pages/contacto.html">CONTACTO</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
               </li>
-              <li>
-                <a href="./pages/login.html">LOGIN</a>
+              <li class="navbar__item">
+                <a class="navbar__link" href="./pages/login.html">LOGIN</a>
               </li>
-              <li>
-                <a href="./pages/carrito.html">
+              <li class="navbar__item">
+                <a class="navbar__cart" href="./pages/carrito.html">
                 <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
                 </a>
                 
@@ -34,19 +45,14 @@
         </nav>
     </header>
  <!--Fin header-->
+ <section class="hero">
+  <article class="hero__content container">
+      <h3 class="hero__title">Nuevos Ingresos</h3>
+      <p class="hero__text">Descubrí el próximo Funko Pop de tu colección</p>
+      <a class="hero__link" href="./pages/shop.html">SHOP</a>
+  </article>
+</section>
  <main>
-  <section>
-    <article class="banner">
-      <div class="banner-text">
-        <h3>Nuevos Ingresos</h3>
-        <p>Descubrí el próximo Funko Pop de tu colección</p>
-        <a href="./pages/shop.html">SHOP</a>
-      </div>
-      <picture class="banner-img">
-        <img src="./img/funkos-banner.webp" alt="funkos banner">
-      </picture>
-    </article>
-  </section>
   <div class="cuerpo-cont">
 
     <section class="producto">
@@ -151,6 +157,6 @@
     </picture>
   </section>
  </footer>
-    
+ <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>

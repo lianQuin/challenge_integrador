@@ -4,57 +4,136 @@
     --color-3: #FF3333;
     --color-4: #111111;
     --color-5:#1D84B5;
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway';
 }
 
-nav {
-    width: 100%;
-    height: 144px;
-    background-color: var(--color-1);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+html {
+    font-size: 62.5%;
+    color: #111;
 }
 
-.nav-bar{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    font-size: 1.2em;
-    align-items: center;
-}
-
-.nav-bar a {
-    color: var(--color-2);
+a {
     text-decoration: none;
+    font-size: 2em;
+    color: inherit;
 }
 
-.banner{
+ul, ol {
+    list-style-type: none;
+}
+
+p {
+    font-size: 1.8em;
+}
+
+img {
     width: 100%;
-    height: 338px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+header {
+    background-color: var(--color-1);
+    padding: 30px;
+}
+
+.navbar {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    max-width: 300px;
+}
+
+.navbar__menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar__link {
+    color: var(--color-2);
+    font-size: 1.4em;
+    padding: 8px 16px;
+    display: inline-block;
+    transition: background .3s ease-in-out;
     position: relative;
-    overflow: hidden;
+}
+
+.navbar__link:hover {
+    background-color: var(--color-3);
     
 }
 
-.banner-text{
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.with-submenu:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: var(--color-1);
+}
+
+.submenu__link {
+    display: block;
+    padding: 8px 16px;
+    font-size: 1.4em;
+    color: var(--color-2);
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: var(--color-3);
+}
+/*Fin header*/
+
+/*HERO*/
+
+.hero {
+    background-image: url(../img/funkos-banner.webp);
+
+}
+
+.hero__content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 105px;
+    gap: 20px;
+}
+
+.hero__title {
+    font-family: var(--base-font);
+    font-size: 2.4em;
     color: var(--color-2);
 }
 
-.banner-text h3{
-    font-size: 2em;
-    margin-bottom: 5px;
+.hero__text {
+    font-family: var(--base-font);
+    font-size: 1.4em;
+    color: var(--color-2);
 }
 
 .banner-text a{
@@ -68,17 +147,6 @@ nav {
     border-radius: 50px;
     font-size: 1.2em;
     text-decoration: none;
-}
-
-.banner-img{
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-}
-
-.banner-img img{
-    width: 100%;
-    filter: brightness(0.5);
 }
 
 .cuerpo-cont{
