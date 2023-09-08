@@ -34,9 +34,11 @@
     --font-medium: 1.8em;
     --font-small: 1.6em;
     --font-xsmall: 1.2em;
+    --font-xxsmall: 1em;
 
     /*Spacings*/
     --spacing-128: 12.8rem;
+    --spacing-96: 9.6rem;
     --spacing-68: 6.8rem;
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
@@ -45,6 +47,7 @@
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
+    --spacing-6: 0.6rem;
 }
 
 *,
@@ -368,3 +371,238 @@ header {
         opacity: 1;
     }
 }
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 1000px){
+
+    header {
+        padding: var(--spacing-28);
+    }
+
+    .container{
+        max-width: 90%;
+    }
+    .navbar__logo {
+        max-width: 220px;
+    }
+
+    .navbar__menu {
+        gap: var(--spacing-12);
+    }
+
+    .navbar__link {
+        font-size: var(--font-small);
+    }
+
+    .navbar__cart img {
+        width: 80%;
+    }
+
+    .submenu{
+        width: 200px;
+    }
+    
+    .submenu__link {
+        padding: var(--spacing-6) var(--spacing-12);
+        font-size: var(--font-small);
+    }
+
+    .hero {
+        padding: var(--spacing-96);
+    }
+
+    .collection__title {
+        font-size: var(--font-jumbo);
+    }
+
+    .collection__text {
+        font-size: var(--font-medium);
+    }
+
+    .collection__link {
+        font-size: var(--font-small);
+    }
+
+    .slider__title {
+        font-size: var(--font-jumbo);
+    }
+
+    .card-item__tag {
+        font-size: xx-small;
+    }
+
+    .card-item__licence {
+        font-size: var(--font-xsmall);
+    }
+
+    .card-item__name {
+        font-size: var(--font-xsmall);
+    }
+    
+    .card-item__price {
+        font-size: var(--font-xsmall);
+    }
+
+    .card-item__promo {
+        font-size: var(--font-xxsmall);
+    }
+
+    .footer {
+        padding: var(--spacing-36);
+    }
+
+}
+
+@media screen and (max-width: 740px){
+
+    header {
+        padding: var(--spacing-16);
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+    .navbar__logo {
+        max-width: 160px;
+    }
+
+    .navbar__menu {
+        gap: var(--spacing-6);
+    }
+
+    .navbar__link {
+        font-size: var(--font-xsmall);
+        padding: var(--spacing-6) var(--spacing-8);
+    }
+
+    .navbar__cart img {
+        width: 50%;
+    }
+
+    .submenu{
+        width: 150px;
+    }
+    
+    .submenu__link {
+        padding: var(--spacing-6) var(--spacing-12);
+        font-size: var(--font-xsmall);
+    }
+    
+    .hero {
+        padding: var(--spacing-68);
+    }
+
+    .hero__title {
+        font-size: var(--font-large);
+    }
+
+    .hero__text {
+        font-size: var(--font-small);
+    }
+
+    .hero__link {
+        font-size: var(--font-small);
+        padding: var(--spacing-8) var(--spacing-36);
+    }
+
+    .collection__title {
+        font-size: var(--font-large);
+    }
+
+    .collection__text {
+        font-size: var(--font-small);
+    }
+
+    .collection__link {
+        font-size: var(--font-xsmall);
+        padding: var(--spacing-12) var(--spacing-28);
+    }
+
+    .slider__title {
+        font-size: var(--font-large);
+    }
+
+    .slider__items {
+        gap: var(--spacing-12);
+    }
+
+    .card-item__content {
+        padding: var(--spacing-6);
+    }
+
+    .footer {
+        padding: var(--spacing-24);
+    }
+
+    @media screen and (max-width: 480px){
+
+        header {
+            padding: var(--spacing-8);
+        }
+    
+        .container {
+            max-width: 95%;
+        }
+    
+        .navbar__logo {
+            max-width: 100px;
+        }
+    
+        .navbar__menu {
+            gap: var(--spacing-8);
+        }
+    
+        .navbar__link {
+            font-size: var(--font-xxsmall);
+            padding: var(--spacing-6) var(--spacing-6);
+        }
+    
+        .navbar__cart img {
+            width: 40%;
+        }
+    
+        .submenu{
+            width: 100px;
+        }
+        
+        .submenu__link {
+            padding: var(--spacing-6) var(--spacing-12);
+            font-size: var(--font-xxsmall);
+        }
+
+        .collection__content {
+            gap: var(--spacing-16);
+        }
+    
+        .collection__title {
+            font-size: var(--font-medium);
+        }
+    
+        .collection__text {
+            font-size: var(--font-xsmall);
+            padding-bottom: var(--spacing-12);
+        }
+    
+        .collection__link {
+            font-size: var(--font-xxsmall);
+            padding: var(--spacing-8) var(--spacing-20);
+        }
+    
+        .slider__title {
+            font-size: var(--font-medium);
+        }
+    
+        .slider__items {
+            flex-direction: column;
+            gap: var(--spacing-12);
+        }
+    
+        .footer {
+            padding: var(--spacing-16);
+        }
+
+    }
+}
+
