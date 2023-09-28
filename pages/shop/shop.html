@@ -34,38 +34,44 @@
         </nav>
     </header>
  <!--Fin header-->
- <aside>
-    <div>
-        <h2>BUSCAR</h2>
-        <input type="text" name="Buscador" placeholder="Item o categoria">
-    </div>
-     <div>
-        <h2>ORDENAR POR</h2>
-        <form action="">
-            <select name="" id="">
-                <option value=">">Mayor</option>
-                <option value="<">Menor</option>
-            </select>
-        </form>
-     </div>   
-     <div>
-        <h2>PRECIO</h2>
-        <p>MIN</p>
-        <input type="int" name="precio mínimo" placeholder="0">
-        <p>MAX</p>
-        <input type="int" name="precio máximo" placeholder="0">
-     </div>
-     <div>
-        <h2>FILTRAR</h2>
-        <select name="Filtros" id="">
-            </select><input type="radio" name="filtro" value="1">NUEVOS
-            <input type="radio" name="filtro" value="2">OFERTAS
-            <input type="radio" name="filtro" value="3">EDICIÓN ESPECIAL
-            <input type="radio" name="filtro" value="4">FAVORITOS
-        
+ <!--formulario-->
+ <aside class= "formulario">
+  <div>
+      <h2 class= "titulos">BUSCAR</h2>
+      <input class= "buscador" type="text" name="Buscador" placeholder="Item o categoria">
+  </div>
+   <div>
+      <h2 class= "titulos">ORDENAR POR</h2>
+      <form action="">
+          <select class= "buscador" name="" id="">
+              <option value=">">Mayor</option>
+              <option value="<">Menor</option>
+          </select>
+      </form>
+   </div>  
+   <div>
+      <h2 class= "titulos">PRECIO</h2>
+      <p class= "precio-p">MIN</p>
+      <input class= "precio" type="int" name="precio mínimo" placeholder="0">
+      <p>-</p>
+      <p class= "precio-p">MAX</p>
+      <input class= "precio" type="int" name="precio máximo" placeholder="0">
+   </div>
+   <div>
+      <h2 class= "titulos">FILTRAR</h2>
+          <input class= "filtros" type="radio" name="filtro" value="1">NUEVOS
+          <input class= "filtros" type="radio" name="filtro" value="2">OFERTAS
+          <input class= "filtros" type="radio" name="filtro" value="3">EDICIÓN ESPECIAL
+          <input class= "filtros" type="radio" name="filtro" value="4">FAVORITOS
+       
+   </div>
 
-     </div>
-</aside>
+
+ 
+ 
+ <!--fin-->
+ 
+ </aside>
  <main>
         <section>
             <h2>Ultimos lanzamientos</h2>
@@ -134,7 +140,7 @@
         </picture>
       </section>
      </footer>
-    
+     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>img\branding\isotype.svg
     
 </body>
 </html>
