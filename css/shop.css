@@ -339,6 +339,58 @@ nav {
     display: none;
 }
 
+ /* pagination position styling */
+ .pagination_section {
+    position: relative;
+    list-style:none;
+	text-align: center;
+    font-weight: 700;
+   
+  }
+ 
+  /* pagination styling */
+  .pagination_section a {
+    color: black;
+    padding: 3px 5px;
+    text-decoration: none;
+    border: 2px solid rgb(158, 151, 151);
+  }
+ 
+  /* pagination hover effect on non-active */
+  .pagination_section a:hover:not(.active) {
+    color:#FF3333;
+    background-color:white;
+    border: 2px solid rgb(153, 49, 49);
+  }
+ 
+  
+ 
+  .content {
+    margin: 50px;
+    padding: 15px;
+    width: 700px;
+    height: 200px;
+    border: 2px solid rgb(153, 49, 49);
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer section{
     width: 100%;
     height: 343px;
