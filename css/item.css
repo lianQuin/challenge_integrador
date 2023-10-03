@@ -56,6 +56,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: ;
 }
 
 html {
@@ -74,6 +75,8 @@ a {
 header, footer {
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
+    background-color: var(--dark-bg-solid);
+
 }
 
 ul, ol {
