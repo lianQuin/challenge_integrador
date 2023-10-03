@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shop/funkoshop</title>
     <link rel="stylesheet" href="../../css/shop.css">
+
 </head>
 <body>
       <!--Inicio header-->
@@ -34,85 +35,81 @@
         </nav>
     </header>
  <!--Fin header-->
- <!--formulario-->
- <aside class= "formulario">
-  <div>
-      <h2 class= "titulos">BUSCAR</h2>
-      <input class= "buscador" type="text" name="Buscador" placeholder="Item o categoria">
-  </div>
-   <div>
-      <h2 class= "titulos">ORDENAR POR</h2>
-      <form action="">
-          <select class= "buscador" name="" id="">
-              <option value=">">Mayor</option>
-              <option value="<">Menor</option>
-          </select>
-      </form>
-   </div>  
-   <div>
-      <h2 class= "titulos">PRECIO</h2>
-      <p class= "precio-p">MIN</p>
-      <input class= "precio" type="int" name="precio mínimo" placeholder="0">
-      <p>-</p>
-      <p class= "precio-p">MAX</p>
-      <input class= "precio" type="int" name="precio máximo" placeholder="0">
-   </div>
-   <div>
-      <h2 class= "titulos">FILTRAR</h2>
-          <input class= "filtros" type="radio" name="filtro" value="1">NUEVOS
-          <input class= "filtros" type="radio" name="filtro" value="2">OFERTAS
-          <input class= "filtros" type="radio" name="filtro" value="3">EDICIÓN ESPECIAL
-          <input class= "filtros" type="radio" name="filtro" value="4">FAVORITOS
-       
-   </div>
-
-
- 
- 
- <!--fin-->
- 
- </aside>
- <main>
-  <section class="slider container">
-    <h2 class="slider__title">Últimos lanzamientos</h2>
-    <ul class="slider__items">
-        <li class="slider__item">
-            <article class="card-item">
-                <a class="card-item__link" href=""></a>
-                <picture class="card-item__cover">
-                    <span class="card-item__tag">Nuevo</span>
-                    <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura coleccionable funko de un Storntrooper">
-                    <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura coleccionable funko de un Storntrooper">
-                    </picture>
-                    
-                <div class="card-item__content">
-                    <p class="card-item__licence">STAR WARS</p>
-                    <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
-                    <p class="card-item__price">$1799,99.-</p>
-                    <p class="card-item__promo">3 CUOTAS SIN INTERES</h5>
-                </div>
-            </article>
-        </li>
-        <li class="slider__item">
-            <article class="card-item">
-                <a class="card-item__link" href=""></a>
-                <picture class="card-item__cover">
-                    <span class="card-item__tag">Nuevo</span>
-                    <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="FIGURA DE COLECCION DE FUNKO POKEMON PIDGEOTTO">
-                    <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="FIGURA DE COLECCION DE FUNKO POKEMON PIDGEOTTO">
-                </picture>
-                <div class="card-item__content">
-                    <p class="card-item__licence">POKEMON</p>
-                    <h4 class="card-item__name">PIDGEOTTO</h4>
-                    <p class="card-item__price">$1799,99.-</p>
-                    <p class="card-item__promo">3 CUOTAS SIN INTERES</h5>
-                </div>
-            </article>
-        </li>
-        <li class="slider__item">
-            <article class="card-item">
-                <a class="card-item__link" href=""></a>
-                <picture class="card-item__cover">
+   <main id="shop" class="container">
+       <!--formulario-->
+      <aside class= "shop__filter">
+       <div>
+        <label for="search">BUSCAR</label>
+        <input type="text" name="search" id="search" placeholder="Item o categoria">
+      </div>
+       <div>
+        <label for="orderby">ORDENAR POR</label><label for=""></label>>
+        <select name="ordeby" id="orderby">
+               <option value="AZ">A-Z</option>
+               <option value="ZA">Z-A</option>
+              <option value="desc">Mayor precio</option>
+              <option value="asc">Menor precio</option>
+        </select>
+    
+     </div>  
+     <div>
+      <span>Precio</span>
+      <label for="min">MIN</label>
+      <input type="text" name="min" id="min" placeholder="0">
+      <label for="max">MAX</label>
+      <input type="text" name="max" id="max" placeholder="0">
+      </div>
+      <div>
+      <span for ="filter">FILTRAR</span>
+          <input type="checkbox" name="filter" id="news"   value="1">
+          <label for ="" >NUEVOS</label>
+          <input type="checkbox" name="filter" id="offers" value="2">
+          <label for="" >OFERTAS</label>
+          <input type="checkbox" name="filter" id="special edition"   value="3">
+          <label for ="" >EDICIÓN ESPECIAL</label>
+          <input type="checkbox" name="filter" id="favorite"   value="4">
+          <label for ="" >FAVORITOS</label> 
+       </div>
+      </aside><!--fin-->
+ <section class="slider container">
+            <h2 class="slider__title">Últimos lanzamientos</h2>
+             <ul class="slider__items">
+                <li class="slider__item">
+          <article class="card-item">
+              <a class="card-item__link" href=""></a>
+              <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura coleccionable funko de un Storntrooper">
+                  <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura coleccionable funko de un Storntrooper">
+              </picture>
+             <div class="card-item__content">
+                <p class="card-item__licence">STAR WARS</p>
+                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                <p class="card-item__price">$1799,99.-</p>
+                <p class="card-item__promo">3 CUOTAS SIN INTERES</h5>
+              </div>
+          </article>
+      </li>
+      <li class="slider__item">
+          <article class="card-item">
+              <a class="card-item__link" href=""></a>
+              <picture class="card-item__cover">
+                <span class="card-item__tag">Nuevo</span>
+                  <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="FIGURA DE COLECCION DE FUNKO POKEMON PIDGEOTTO">
+                  <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="FIGURA DE COLECCION DE FUNKO POKEMON PIDGEOTTO">
+              </picture>
+              <div class="card-item__content">
+                <p class="card-item__licence">POKEMON</p>
+                <h4 class="card-item__name">PIDGEOTTO</h4>
+                <p class="card-item__price">$1799,99.-</p>
+                <p class="card-item__promo">3 CUOTAS SIN INTERES</h5>
+              </div>
+        </article>
+    </li>
+      <li class="slider__item">
+        <article class="card-item">
+            <a class="card-item__link" href=""></a>
+              <picture class="card-item__cover">
                     <span class="card-item__tag">Nuevo</span>
                     <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp" alt="FIGURA DE COLECCION DE FUNKO HARRY POTTER LUNA">
                     <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp" alt="FIGURA DE COLECCION DE FUNKO HARRY POTTER LUNA">
@@ -124,29 +121,43 @@
                     <p class="card-item__promo">3 CUOTAS SIN INTERES</h5>
                 </div>
             </article>
-        </li>
-    </ul>
-</section>
+            </li>
+          </ul>
+         </section>
+     </main>
 
-        
-        <section>
+<!-- 1	STW001001	Baby Yoda Blueball	STARS WARS		delete_trash
+2	STW001002	Boba Fett Fighter	STARS WARS		delete_trash
+4	STW001004	Stormtrooper Lightsaber	STARS WARS		delete_trash
+5	PKM001001	Charmander Smiley	POKEMON		
+6	PKM001002	Dragonite Hi!	POKEMON		delete_trash
+7	PKM001003	Pidgeotto Flying	POKEMON		delete_trash
+8	PKM001004	Pikachu Smiley	POKEMON		delete_trash
+9	PKM001005	Vulpix Fancy	POKEMON		delete_trash
+10	HPT001001	Harry Potter & Hegwid	HARRY POTTER		delete_trash
+11	HPT001002	Herminione Ball Dress	HARRY POTTER		delete_trash
+12	HPT001003	Luna Lovegood Lion Mask	HARRY POTTER		delete_trash
+13	HPT001004	Snape Patronus	HARRY POTTER		delete_trash
+
+ -->
+         <section id="pagination">
             <!-- pagination elements -->
-        <div class="pagination_section">
-            <a href="#"><</a>
-            <a href="#" >1</a>
-            <a href="#" >2</a>
-            <a href="#" >3</a>
-            <a href="#" >4</a>
-            <a href="#" >5</a>
-            <a href="#">6</a>
-            <a href="#">7</a>
-            <a href="#">8</a>
-            <a href="#">9</a>
-            <a href="#">10</a>
-            <a href="#">></a>
-        </div>
+            <div class="pagination_section">
+                <a href="#"><</a>
+                <a href="#" >1</a>
+                <a href="#" >2</a>
+                <a href="#" >3</a>
+                <a href="#" >4</a>
+                <a href="#" >5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#">></a>
+            </div>
         </section>
-    </main>
+   
     <footer>
    
       <section>

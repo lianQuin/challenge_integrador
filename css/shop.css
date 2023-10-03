@@ -1,17 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
 :root {
-    --color-1: #30343F;
-    --color-2: #FFFFFF;
-    --color-3: #FF3333;
-    --color-4: #111111;
-    --color-5:#1D84B5;
+    /*Colors*/
+
+    --primary-solid: #ff3333;
+    --primary-900: rgba(255, 51, 51, 0.9);
+    --primary-500: rgba(255, 51, 51, 0.5);
+    --primary-300: rgba(255, 51, 51, 0.3);
+
+    --secondary-solid: #1d84b5;
+    --secondary-900: rgba(29, 133, 181, 0.9);
+    --secondary-500: rgba(29, 133, 181, 0.5);
+    --secondary-300: rgba(29, 133, 181, 0.3);
+    
+    --dark-solid: #1f1f1f;
+    --dark-900: rgba(31, 31, 31, 0.9);
+    --dark-500: rgba(31, 31, 31, 0.5);
+    --dark-300: rgba(31, 31, 31, 0.3);
+
+    --dark-bg-solid: #30343f;
+    --light-bg-solid: #fafaff;
+    --light-font-solid: #FFF;
+
+    /*Typography*/
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /*Font-size*/
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.2em;
+    --font-xxsmall: 1em;
+
+    /*Spacings*/
+    --spacing-128: 12.8rem;
+    --spacing-96: 9.6rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+    --spacing-6: 0.6rem;
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway';
 }
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+    color: inherit;
+    font-family: inherit;
+}
+
+header, footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+p {
+    font-size: var(--font-medium);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+
+
 
 nav {
     width: 100%;
@@ -35,56 +120,21 @@ nav {
     text-decoration: none;
 }
 /* aca comienza formulario */
-
-
-.formulario{
-    margin: auto;
-    margin-top: 212px;
-    padding: 110px;
-    width: 243.04px;
-   
+main {
+    display: flex;
+}
+.shop__item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-28);
 }
 
-
-.titulos{
-    font-size: 24px;
-    margin-top: 212px;
-    font-family: 'inter';
-    color: black;
-
-
-}
- 
-.buscador {
-    width: 243.03px;
-    border: 2px solid #30343f;
-    font-family: Arial, Helvetica, sans-serif #b9b9b9;
-    font-size: 20px;
-
-
-}
-
-
-.precio-p{
-    font-family:Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: 16px;
-}
-
-
-.precio{
-    width: 59.14px;
-    border: 2px solid #30343f
-    }
-
-
-.filtros{
-    font-family:Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: 18px;
+.shop__item{
+    flex: 1 1 clamp(200px,30%);
 }
 
 /*aca termina formulario*/
+
 footer section{
     width: 100%;
     height: 343px;
@@ -341,36 +391,39 @@ nav {
 
  /* pagination position styling */
  .pagination_section {
+
     position: relative;
     list-style:none;
 	text-align: center;
     font-weight: 700;
    
   }
+
+
  
   /* pagination styling */
   .pagination_section a {
-    color: black;
+    color:var (var(--dark-solid));
     padding: 3px 5px;
     text-decoration: none;
-    border: 2px solid rgb(158, 151, 151);
+    border: 2px solid var(--dark-bg-solid);
   }
  
-  /* pagination hover effect on non-active */
+  /* pagination hover effect on non-active*/ 
   .pagination_section a:hover:not(.active) {
-    color:#FF3333;
-    background-color:white;
-    border: 2px solid rgb(153, 49, 49);
+    color:var(--primary-500);
+    background-color: var(--color-2);
+    border: 2px solid var(--color-3);
   }
  
   
  
-  .content {
+  .pagination_section content {
     margin: 50px;
     padding: 15px;
     width: 700px;
     height: 200px;
-    border: 2px solid rgb(153, 49, 49);
+    border: 2px solid var(--color-3);
   }
  
 
