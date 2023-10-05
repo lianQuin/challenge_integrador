@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@100;200;300;400;500&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&display=swap');
+
+
 :root {
     --color-1: #30343F;
     --color-2: #FFFFFF;
@@ -11,6 +15,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway';
+}
+.login{
+    height: 50.5vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 nav {
@@ -34,7 +47,66 @@ nav {
     color: var(--color-2);
     text-decoration: none;
 }
-
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.todo label{
+    font-size: 18px;
+    color: var(--color-4);
+    font-family:'Inter', sans-serif;
+}
+.todo input{
+    border-style: none;
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+.datos{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50%;
+} 
+.datos hr{
+    margin-top: 2px;
+    background-color: var(--color-3);
+    padding: 2px;
+    padding-right: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+#ingresar{
+    margin-right: 25px;
+    color: var(--color-2);
+    background-color: var(--color-3);
+    padding: 15px;
+    border: none;
+}
+.check{
+    margin-right: 10px;
+    border-color: var(--color-4);
+    border-radius: 3px;
+}
+.botones{
+    margin-bottom: 20px;
+    font-family:'Inter', sans-serif;
+}
+#olvidar{
+    border-style: none;
+    background-color: var(--color-2);
+    color: var(--color-5);
+    font-family:'Inter', sans-serif;
+    font-size: 15px;
+}
 
 footer section{
     width: 100%;
