@@ -56,7 +56,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: ;
 }
 
 html {
@@ -90,6 +89,7 @@ p {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    font-family: var(--base-font);
 }
 
 img {
@@ -176,10 +176,48 @@ header {
 /*Fin header*/
 
 
-
-
-
-
+.todo{
+    display: flex;
+    align-items: center;
+}
+.item__name{
+    font-size: var(--font-jumbo );
+}
+.item__description{
+    font-size: var(--font-medium);
+    color: var(--dark-solid);
+}
+.item__info{
+    margin: 200px;
+}
+.item__description, .item__price, .item__cart{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.item__price{
+    font-size: var(--font-large);
+    color: var(--dark-solid) ;
+}
+.item__input{
+    border-color: #C9C9C9;
+    width: 80px;
+    height: 35px;
+    padding: 5px;
+    text-align: center;
+    border-style: ridge;
+    font-size: var(--font-small);
+}
+.item__submit{
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: 10px;
+    border-style: none;
+    margin-left: 40px;
+}
+.pago{
+    color: var(--secondary-solid);
+    font-size: var(--font-small);
+}
 
 /*SLIDER*/
 
@@ -194,13 +232,14 @@ header {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
     text-transform: uppercase;
+    margin-bottom: 5%;
 }
 
 .slider__items{
     display: flex;
     gap: var(--spacing-24);
+    margin-bottom:5% ;
 }
-
 .card-item__content {
     display: flex;
     flex-direction: column;
@@ -258,7 +297,10 @@ header {
 .card-item__cover:hover .card-item__img--front {
     display: none;
 }
-
+footer{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 footer section{
     width: 100%;
     height: 343px;
@@ -288,6 +330,9 @@ footer section p{
     margin-bottom: 20px;
     color: var(--color-2);
     font-size: 1.2em;
+}
+.footer__copy{
+    text-align: center;
 }
 
 
