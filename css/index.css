@@ -284,7 +284,7 @@ header {
     text-transform: uppercase;
 }
 
-iconify-icon{
+.glide__arrow iconify-icon{
     color: var(--dark-bg-solid);
     font-size: var(--font-small);
     font-weight: 700;
