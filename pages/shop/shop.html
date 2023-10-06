@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shop/funkoshop</title>
     <link rel="stylesheet" href="../../css/shop.css">
+    <link rel="shortcut icon" href="../../img/branding/isotype.svg" type="image/x-icon">
 
 </head>
 <body>
@@ -35,96 +36,173 @@
         </nav>
     </header>
  <!--Fin header-->
-   <main id="shop" class="container">
-       <!--formulario-->
-      <aside class= "shop__filter">
-       <div>
-        <label for="search">BUSCAR</label>
-        <input type="text" name="search" id="search" placeholder="Item o categoria">
+ <main class="shop">
+  <div class="formulario">
+  <form action="carrito.html" method="post">
+      <div class="buscar">
+          BUSCAR
+      <br>
+      <input type="search" name="buscar" placeholder="Ítem o Categoría" >
       </div>
-       <div>
-        <label for="orderby">ORDENAR POR</label><label for=""></label>>
-        <select name="ordeby" id="orderby">
-               <option value="AZ">A-Z</option>
-               <option value="ZA">Z-A</option>
-              <option value="desc">Mayor precio</option>
-              <option value="asc">Menor precio</option>
-        </select>
-    
-     </div>  
-     <div>
-      <span>Precio</span>
-      <label for="min">MIN</label>
-      <input type="text" name="min" id="min" placeholder="0">
-      <label for="max">MAX</label>
-      <input type="text" name="max" id="max" placeholder="0">
+      <br>
+      <div class="order">
+          ORDENAR POR
+      <br>
+      <select name="ordenar" >
+          <option value="v1">Mayor a Menor</option>
+          <option value="v2">Menor a Mayor</option>
+          <option value="v3">Predeterminado</option>
+      </select>
       </div>
-      <div>
-      <span for ="filter">FILTRAR</span>
-          <input type="checkbox" name="filter" id="news"   value="1">
-          <label for ="" >NUEVOS</label>
-          <input type="checkbox" name="filter" id="offers" value="2">
-          <label for="" >OFERTAS</label>
-          <input type="checkbox" name="filter" id="special edition"   value="3">
-          <label for ="" >EDICIÓN ESPECIAL</label>
-          <input type="checkbox" name="filter" id="favorite"   value="4">
-          <label for ="" >FAVORITOS</label> 
-       </div>
-      </aside><!--fin-->
- <section class="slider container">
-            <h2 class="slider__title">Últimos lanzamientos</h2>
-             <ul class="slider__items">
-                <li class="slider__item">
-          <article class="card-item">
-              <a class="card-item__link" href=""></a>
-              <picture class="card-item__cover">
-                  <span class="card-item__tag">Nuevo</span>
-                  <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura coleccionable funko de un Storntrooper">
-                  <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura coleccionable funko de un Storntrooper">
-              </picture>
-             <div class="card-item__content">
-                <p class="card-item__licence">STAR WARS</p>
-                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
-                <p class="card-item__price">$1799,99.-</p>
-                <p class="card-item__promo">3 CUOTAS SIN INTERES</h5>
+      <br>
+      <div class="precio">
+          PRECIO
+      <br>
+      <div class="p">
+          MIN
+      <input type="number" name="precio" placeholder="0">
+      - MAX
+      <input type="number" name="precio" placeholder="0">
+      </div>
+      </div>
+      <br>
+      <div class="filtro">
+          FILTRAR
+          <div class="checkbox">
+              <div class="tipos">
+                  <input type="checkbox" name="filtrar" >
+                  NUEVO
               </div>
-          </article>
-      </li>
-      <li class="slider__item">
-          <article class="card-item">
-              <a class="card-item__link" href=""></a>
-              <picture class="card-item__cover">
-                <span class="card-item__tag">Nuevo</span>
-                  <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="FIGURA DE COLECCION DE FUNKO POKEMON PIDGEOTTO">
-                  <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="FIGURA DE COLECCION DE FUNKO POKEMON PIDGEOTTO">
-              </picture>
-              <div class="card-item__content">
-                <p class="card-item__licence">POKEMON</p>
-                <h4 class="card-item__name">PIDGEOTTO</h4>
-                <p class="card-item__price">$1799,99.-</p>
-                <p class="card-item__promo">3 CUOTAS SIN INTERES</h5>
+          </div>
+
+          <div class="checkbox">
+              <div class="tipos">
+                  <input type="checkbox" name="filtrar" >
+                  OFERTAS
               </div>
-        </article>
-    </li>
-      <li class="slider__item">
-        <article class="card-item">
-            <a class="card-item__link" href=""></a>
-              <picture class="card-item__cover">
-                    <span class="card-item__tag">Nuevo</span>
-                    <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp" alt="FIGURA DE COLECCION DE FUNKO HARRY POTTER LUNA">
-                    <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp" alt="FIGURA DE COLECCION DE FUNKO HARRY POTTER LUNA">
-                </picture>
-                <div class="card-item__content">
-                    <p class="card-item__licence">HARRY POTTER</p>
-                    <h4 class="card-item__name">LUNA</h4>
-                    <p class="card-item__price">$1799,99.-</p>
-                    <p class="card-item__promo">3 CUOTAS SIN INTERES</h5>
-                </div>
-            </article>
-            </li>
-          </ul>
-         </section>
-     </main>
+          </div>
+
+          <div class="checkbox">
+              <div class="tipos">
+                  <input type="checkbox" name="filtrar" >
+                      EDICIÓN ESPECIAL
+              </div>   
+          </div>
+
+          <div class="checkbox">
+              <div class="tipos">
+                  <input type="checkbox" name="filtrar" >
+                  FAVORITOS
+              </div>
+          </div>
+      </div>
+      
+  </form>
+  </div>
+  <div class="productos">
+      <div class="filas">
+          <div class="produ">
+              <h5 class="new">NUEVO</h5>
+              <img src="../../img/star-wars/luke-1.webp" alt="Luke">
+              <div class="info">
+                  <h4>STAR-WARS</h4>
+                  <h3>LUKE</h3>
+                  <h4>$ 1799,99</h4>
+                  <h5 class="cuotas">3 CUOTAS SIN INTERÉS</h5>
+              </div>
+          </div>
+          <div class="produ">
+              <h5 class="new">NUEVO</h5>
+              <img src="../../img/pokemon/pikachu-1.webp" alt="Pikachu">
+              <div class="info">
+                  <h4>POKEMON</h4>
+                  <h3>PIKACHU</h3>
+                  <h4>$ 1799,99</h4>
+                  <h5 class="cuotas"> 3 CUOTAS SIN INTERÉS</h5>
+              </div>
+          </div>
+          <div class="produ">
+              <h5 class="new">NUEVO</h5>
+              <img src="../../img/harry-potter/harry-1.webp" alt="Harry Potter">
+              <div class="info">
+                  <h4>HARRY POTTER</h4>
+                  <h3>HARRY POTTER</h3>
+                  <h4>$ 1799,99</h4>
+                  <h5 class="cuotas">3 CUOTAS SIN INTERÉS</h5>
+              </div>
+          </div>
+      </div>
+      <div class="filas">
+          <div class="produ">
+              <h5 class="new">NUEVO</h5>
+              <img src="../../img/star-wars/trooper-1.webp" alt="Trooper">
+              <div class="info">
+                  <h4>STAR-WARS</h4>
+                  <h3>STORMTROOPER LIGHTSABER</h3>
+                  <h4>$ 1799,99</h4>
+                  <h5 class="cuotas">3 CUOTAS SIN INTERÉS</h5>
+              </div>
+          </div>
+          <div class="produ">
+              <h5 class="new">NUEVO</h5>
+              <img src="../../img/pokemon/charmander-1.webp" alt="Charmander">
+              <div class="info">
+                  <h4>POKEMON</h4>
+                  <h3>CHARMANDER</h3>
+                  <h4>$ 1799,99</h4>
+                  <h5 class="cuotas"> 3 CUOTAS SIN INTERÉS</h5>
+              </div>
+          </div>
+          <div class="produ">
+              <h5 class="new">NUEVO</h5>
+              <img src="../../img/harry-potter/hermione-1.webp" alt="Herminione">
+              <div class="info">
+                  <h4>HARRY POTTER</h4>
+                  <h3>HERMIONE</h3>
+                  <h4>$ 1799,99</h4>
+                  <h5 class="cuotas">3 CUOTAS SIN INTERÉS</h5>
+              </div>
+              
+          </div>
+      </div>
+      <div class="filas">
+          <div class="produ">
+              <h5 class="new">NUEVO</h5>
+              <img src="../../img/star-wars/bobbafeth-1.webp" alt="Bobba Feth">
+              <div class="info">
+                  <h4>STAR-WARS</h4>
+                  <h3>BOBBA FETH</h3>
+                  <h4>$ 1799,99</h4>
+                  <h5 class="cuotas">3 CUOTAS SIN INTERÉS</h5>
+              </div>
+              
+          </div>
+          <div class="produ">
+              <h5 class="new">NUEVO</h5>
+              <img src="../../img/pokemon/pikachu-1.webp" alt="Pikachu">
+              <div class="info">
+                  <h4>POKEMON</h4>
+                  <h3>PIKACHU</h3>
+                  <h4>$ 1799,99</h4>
+                  <h5 class="cuotas"> 3 CUOTAS SIN INTERÉS</h5>
+              </div>
+              
+          </div>
+          <div class="produ">
+              <h5 class="new">NUEVO</h5>
+              <img src="../../img/harry-potter/luna-1.webp" alt="Luna">
+              <div class="info">
+                  <h4>HARRY POTTER</h4>
+                  <h3>LUNA LOVEGOOD LION MASK</h3>
+                  <h4>$ 1799,99</h4>
+                  <h5 class="cuotas">3 CUOTAS SIN INTERÉS</h5>
+              </div>
+              
+          </div>
+      </div>
+      
+  </div>
+</main>
 
 <!-- 1	STW001001	Baby Yoda Blueball	STARS WARS		delete_trash
 2	STW001002	Boba Fett Fighter	STARS WARS		delete_trash

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item</title>
     <link rel="stylesheet" href="../../css/item.css">
+    <link rel="shortcut icon" href="../../img/branding/isotype.svg" type="image/x-icon">
 </head>
 <body>
  <!--Inicio header-->
@@ -48,28 +49,33 @@
 <!--Fin header-->
 
 <main class="container">
-  <section class="item">
+    <div class="todo">
+<section class="item">
     <picture class="item__img card-item__cover">
       <img class="card-item__img--front" src="../../img/star-wars/baby-yoda-1.webp" alt="Funko baby yoda">
       <img class="card-item__img--back" src="../../img/star-wars/baby-yoda-box.webp" alt="Funko baby yoda">
 </picture>    
-<section>
-<article class="item__info">
+</section>
+<section class="item__info">
   <p class="item__licence"   >STAR WARS </p>
   <h3 class="item__name"   >BABY YODA BLUEBALL</h3>
   
   <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-  <p class="item__price" >$ 1799,99.-</p>
+  <p class="item__price" >$ 1799,99</p>
   <div class="item__cart">
+
+    <input class="item__input" type="number" name="" id="" placeholder="0" min="0">
+    <button class="item__submit btn btn--primary btn--mrdium"type="submit">Agregar al Carrito</button>
+    =======
     <button class="item__quantity" type="button">-</button>
     <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
     <button class="item__quantity" type="button">+</button>
     <button class="item__submit btn btn--primary btn--mrdium"type="submit">Agregar</button>
   </div>
-  <a href="../admin/carrito.html">Agregar al Carrito </a> 
-  <a href="./pages/">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
-</article>
+  <a href="./pages/" class="pago">Ver métodos de pago - 3 CUOTAS SIN INTERÉS</a>
 </section>
+</section>
+</div>
   <section class="slider container">
     <h2 class="slider__title">PRODUCTOS RELACIONADOS</h2>
     <ul class="slider__items">
@@ -124,7 +130,7 @@
         </li>
     </ul>
 </section>
-
+</main>
 <footer class="footer">
   <nav class="navbar container">
       <ul class="navbar__item">
@@ -144,7 +150,7 @@
   </nav>
   <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>img\branding\isotype.svg
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script><!-- img\branding\isotype.svg -->
 </body>
 </html>
 
