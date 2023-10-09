@@ -10,32 +10,46 @@
 </head>
 <body>
       <!--Inicio header-->
-      <header>
-        <nav>
-            <picture>
-                <a href="../../index.html">
-                <img src="../../img/branding/isotype.svg" alt="Isologotipo de la marca Funkoshop"></a>
-            </picture>
-            <ul class="nav-bar">
-              <li>
-                <a href="../shop/shop.html">SHOP</a>
-              </li>
-              <li>
-                <a href="../admin/create.html">CONTACTO</a>
-              </li>
-              <li>
-                <a href="../admin/login.html">LOGIN</a>
-              </li>
-              <li>
-                <a href="../admin/carrito.html">
-                <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
+      <!--Inicio header-->
+ <header>
+    <nav class="navbar container">
+        <picture class="navbar__logo">
+            <a href="../../index.html">
+            <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
+        </picture>
+        <ul class="navbar__menu">
+            <li class="navbar__item with-submenu">
+                <a class="navbar__link with-icon" href="../../pages/shop/shop.html">SHOP<iconify-icon>
+                        icon="tabler:chevron-down"></iconify-icon></a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Funkos</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Remeras</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Llaveros</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../../pages/admin/create.html">CONTACTO</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../../pages/admin/login.html">LOGIN</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__cart" href="../../pages/carrito.html">
+                    <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
                 </a>
-                
-              </li>
-            </ul>
-        </nav>
-    </header>
- <!--Fin header-->
+  
+            </li>
+        </ul>
+    </nav>
+   </header>
+  <!--Fin header-->
+      
  <main class="shop">
   <div class="formulario">
   <form action="carrito.html" method="post">
@@ -103,7 +117,13 @@
       <div class="filas">
           <div class="produ">
               <h5 class="new">NUEVO</h5>
-              <img src="../../img/star-wars/luke-1.webp" alt="Luke">
+              <picture class="item__img card-item__cover">
+                <img class="card-item__img--front" src="../../img/star-wars/luke-1.webp"  alt="Luke">
+                <img class="card-item__img--back" src="../../img/star-wars/luke-box.webp" alt="Luke">
+              </picture>
+
+
+
               <div class="info">
                   <h4>STAR-WARS</h4>
                   <h3>LUKE</h3>
@@ -113,7 +133,12 @@
           </div>
           <div class="produ">
               <h5 class="new">NUEVO</h5>
-              <img src="../../img/pokemon/pikachu-1.webp" alt="Pikachu">
+              <picture class="item__img card-item__cover">
+                <img class="card-item__img--front" src="../../img/pokemon/pikachu-1.webp" alt="Pikachu">
+                <img class="card-item__img--back" src="../../img/pokemon/pikachu-box.webp" alt="Luke">
+              </picture>
+
+
               <div class="info">
                   <h4>POKEMON</h4>
                   <h3>PIKACHU</h3>
@@ -123,7 +148,12 @@
           </div>
           <div class="produ">
               <h5 class="new">NUEVO</h5>
-              <img src="../../img/harry-potter/harry-1.webp" alt="Harry Potter">
+              <picture class="item__img card-item__cover">
+                <img class="card-item__img--front" src="../../img/harry-potter/harry-1.webp" alt="Harry Potter">
+                <img class="card-item__img--back" src="../../img/harry-potter/harry-box.webp" alt="Harry Potter">
+              </picture>
+
+
               <div class="info">
                   <h4>HARRY POTTER</h4>
                   <h3>HARRY POTTER</h3>
@@ -135,7 +165,12 @@
       <div class="filas">
           <div class="produ">
               <h5 class="new">NUEVO</h5>
-              <img src="../../img/star-wars/trooper-1.webp" alt="Trooper">
+              <picture class="item__img card-item__cover">
+                <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="Trooper">
+                <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="Trooper">
+              </picture>
+
+
               <div class="info">
                   <h4>STAR-WARS</h4>
                   <h3>STORMTROOPER LIGHTSABER</h3>
@@ -145,7 +180,12 @@
           </div>
           <div class="produ">
               <h5 class="new">NUEVO</h5>
-              <img src="../../img/pokemon/charmander-1.webp" alt="Charmander">
+              <picture class="item__img card-item__cover">
+                <img class="card-item__img--front" src="../../img/pokemon/charmander-1.webp" alt="Charmander">
+                <img class="card-item__img--back" src="../../img/pokemon/charmander-box.webp" alt="Charmander">
+              </picture> 
+
+
               <div class="info">
                   <h4>POKEMON</h4>
                   <h3>CHARMANDER</h3>
@@ -155,7 +195,12 @@
           </div>
           <div class="produ">
               <h5 class="new">NUEVO</h5>
-              <img src="../../img/harry-potter/hermione-1.webp" alt="Herminione">
+              <picture class="item__img card-item__cover">
+                <img class="card-item__img--front" src="../../img/harry-potter/hermione-1.webp" alt="Herminione">
+                <img class="card-item__img--back" src="../../img/harry-potter/hermione-box.webp" alt="Herminione">
+              </picture> 
+
+
               <div class="info">
                   <h4>HARRY POTTER</h4>
                   <h3>HERMIONE</h3>
@@ -168,7 +213,11 @@
       <div class="filas">
           <div class="produ">
               <h5 class="new">NUEVO</h5>
-              <img src="../../img/star-wars/bobbafeth-1.webp" alt="Bobba Feth">
+              <picture class="item__img card-item__cover">
+                <img class="card-item__img--front" src="../../img/star-wars/bobbafeth-1.webp" alt="Bobba Feth">
+                <img class="card-item__img--back" src="../../img/star-wars/bobbafeth-box.webp" alt="Bobba Feth">
+              </picture>
+
               <div class="info">
                   <h4>STAR-WARS</h4>
                   <h3>BOBBA FETH</h3>
@@ -179,7 +228,10 @@
           </div>
           <div class="produ">
               <h5 class="new">NUEVO</h5>
-              <img src="../../img/pokemon/pikachu-1.webp" alt="Pikachu">
+              <picture class="item__img card-item__cover">
+                <img class="card-item__img--front" src="../../img/pokemon/dragonite-1.webp" alt="Dragonite">
+                <img class="card-item__img--back" src="../../img/pokemon/dragonite-box.webp" alt="Dragonite">
+              </picture>
               <div class="info">
                   <h4>POKEMON</h4>
                   <h3>PIKACHU</h3>
@@ -190,7 +242,10 @@
           </div>
           <div class="produ">
               <h5 class="new">NUEVO</h5>
-              <img src="../../img/harry-potter/luna-1.webp" alt="Luna">
+              <picture class="item__img card-item__cover">
+                <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp" alt="Luna">
+                <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp" alt="Luna">
+              </picture>
               <div class="info">
                   <h4>HARRY POTTER</h4>
                   <h3>LUNA LOVEGOOD LION MASK</h3>
@@ -221,25 +276,28 @@
             </div>
         </section>
    
-    <footer>
-   
-      <section>
-          <ul>
-            <li>
-              <a href="../shop/shop.html">SHOP</a></li>
-              <li>
-                <a href="../admin/register.html">INGRESAR</a></li>
-             <li>
-             <a href="../admin/create.html">CONTACTO</a></li>
-          </ul>
-          <p>All rights reserved 2023 - Funkoshop &copy;</p>
-        
-        <picture>
+   <footer class="footer">
+  <nav class="navbar container">
+      <ul class="navbar__item">
+          <li class="navbar__item">
+              <a class="navbar__link" href="../../pages/shop/shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item">
+              <a class="navbar__link" href="../../pages/admin/register.html">INGRESAR</a>
+          </li>
+          <li class="navbar__item">
+              <a class="navbar__link" href="../../pages/admin/create.html">CONTACTO</a>
+          </li>
+      </ul>
+      <picture>
           <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-        </picture>
-      </section>
-     </footer>
-     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>img\branding\isotype.svg
-    
+      </picture>
+  </nav>
+  <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script><!-- img\branding\isotype.svg -->
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="../../js/item.js"></script>
+<script src="../../js/glide.js"></script>
 </body>
 </html>

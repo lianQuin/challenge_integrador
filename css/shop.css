@@ -108,6 +108,80 @@ img {
     margin-top: 1%;
     margin-bottom: 5%;
 }
+/*Header*/
+
+header {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    max-width: 300px;
+}
+
+.navbar__menu{
+    display: flex;
+    gap: var(--spacing-20);
+    align-items: center;
+}
+
+.navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+.navbar__link:hover {
+    background-color: var(--primary-900);
+    
+}
+
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.with-submenu:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    z-index: 3;
+}
+
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: var(--primary-900);
+}
+/*Fin header*/
+
+
+
+
+
+
+
+
+
 /* FORMULARIO SHOP*/
 .formulario{
     font-family: 'Inter', sans-serif;
@@ -537,19 +611,10 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 footer section{
     width: 100%;
     height: 343px;
@@ -580,4 +645,12 @@ footer section p{
     color: var(--color-2);
     font-size: 1.2em;
 }
+.footer__copy{
+    text-align: center;
+    color: var(--color-2);
+    background-color: var(--color-1);
+}
+
+
+
 
