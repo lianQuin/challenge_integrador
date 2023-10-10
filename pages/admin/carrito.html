@@ -35,55 +35,65 @@
     </header>
  <!--Fin header-->
      <main>
-      <p>CARRITO DE COMPRAS</p>
-      <section>
-        <table><thead>
-          <tr>
+      <h1>CARRITO DE COMPRAS</h1>
+      <section >
+        <table class= "productos-container"><thead>
+          <tr class="productos-primercaja">
            <th>DETALLE DE PRODUCTO</th>
+           <br>
            <th>CARRITO</th>
+           <br>
            <th>TOTAL</th>
+           <br>
           </tr>
          </thead>
        <tbody>
-         <tr>
+         <tr class="tarjeta-producto">
            <td>
-             BABY YODA BLUEBALL
+            <h3> BABY YODA BLUEBALL</h3>
              STARS WARS
              <p>precio unitario: $ 1799,99</p>
              <img src="../../img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian"></td>
             <td>
-              2
-             <!-- aqui va una especie de formulario dice:  2   $ 3599,98 -->
+              <div class="item__cart">
+    
+                <button id="subtract" class="item__quantity" type="button">-</button>
+                <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
+                <button id="add" class="item__quantity" type="button">+</button>
+            
+              </div>
+             
             </td>
             <td>
               $3599,98
             </td>
          </tr>
-         <tr>
+         <tr class="tarjeta-producto">
             <td> 
-             
-              PIDGEOTTO
+             <h3>PIDGEOTTO</h3>
               POKEMON
              <p>precio unitario: $ 1799,99</p>
              <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto de la serie Pokemon ">
+             <div class="item__cart">
+    
+              <button id="subtract" class="item__quantity" type="button">-</button>
+              <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
+              <button id="add" class="item__quantity" type="button">+</button>
+          
+            </div>
             </td>
              <td>
-             1
-            <!-- aqui va una especie de formulario dice:  1
-        $ 1799,99--></td>
+             
+            </td>
         <td>
           $1799,99
         </td>
            
           </tr>
-    
-          
-
-          <section>
-           <p> RESUMEN</p>
+          <section class="conteiner cajade-abajo">
            
-            <section>
               <table>
+                <h4> RESUMEN</h4>
                 <tr>
                  <th>CANTIDAD DE ELEMENTOS</th>
                  <td>3</td>
@@ -125,5 +135,5 @@
       </section>
      </footer>
     
-    
+     <script src="../../js/item.js"></script>   
 </body>

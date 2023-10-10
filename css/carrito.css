@@ -35,7 +35,32 @@ nav {
     text-decoration: none;
 }
 
+#productos-container{
+    width: 500px;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+}
 
+.productos-primercaja{
+    justify-content: flex-start;
+}
+.tarjeta-producto{
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-producto img{
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}  
+.item__cart{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    
+}
 footer section{
     width: 100%;
     height: 343px;
