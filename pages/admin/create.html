@@ -7,27 +7,45 @@
     <link rel="stylesheet" href="../../css/create.css">
 </head>
 <body>
-     <!--Inicio header-->
-     <header>
-    <nav>
-        <picture>
+   <!--Inicio header-->
+   <header>
+    <nav class="navbar container">
+        <picture class="navbar__logo">
             <a href="../../index.html">
             <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
         </picture>
-        <ul class="nav-bar">
-          <li>
-            <a href="../shop/shop.html">VER TIENDA</a>
-          </li>
-          <li>
-            <a href="../admin/admin.html">ADMIN</a>
-          </li>
-          <li>
-            <a href="../admin/login.html">SALIR</a>
-          </li>
+        <ul class="navbar__menu">
+            <li class="navbar__item with-submenu">
+                <a class="navbar__link with-icon" href="../../pages/shop/shop.html">SHOP<iconify-icon
+                        icon="tabler:chevron-down"></iconify-icon></a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Funkos</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Remeras</a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="" class="submenu__link">Llaveros</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../../pages/admin/create.html">CONTACTO</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../../pages/admin/login.html">LOGIN</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__cart" href="../../pages/carrito.html">
+                    <img src="../../img/icons/cart-icon.svg" alt="icono de carrito"><span id="cuenta-carrito">0</span>
+                </a>
+
+            </li>
         </ul>
     </nav>
 </header>
- <!--Fin header-->
+<!--Fin header-->   
  <main>
   <h1>CREAR NUEVO ITEM</h1>
 
@@ -85,25 +103,26 @@ Imágenes:
 Elegir archivos
 No se ha seleccionado ningún archivo
  </main>
-  <footer>
-   
-  <section>
-      <ul>
-        <li>
-          <a href="../shop/shop.html">SHOP</a></li>
-          <li>
-            <a href="../admin/register.html">REGISTRARSE</a></li>
-          <li>
-            <a href="../admin/login.html">INGRESAR</a></li>
-          <li>
-         <a href="../admin/create.html">CONTACTO</a></li>
+ <footer class="footer">
+  <nav class="navbar container">
+      <ul class="navbar__item">
+          <li class="navbar__item">
+              <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item">
+              <a class="navbar__link" href="../admin/register.html">INGRESAR</a>
+          </li>
+          <li class="navbar__item">
+              <a class="navbar__link" href="../admin/create.html">CONTACTO</a>
+          </li>
       </ul>
-      <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    
-    <picture>
-      <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-    </picture>
-  </section>
- </footer>  
+      <picture>
+          <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+      </picture>
+  </nav>
+  <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
+<script src="../../js/item.js"></script>   
 </body>
 </html>
+   
