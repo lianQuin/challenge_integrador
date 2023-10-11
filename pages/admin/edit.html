@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar item</title>
-    <link rel="stylesheet" href="../../css/edit.css">
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
    <!--Inicio header-->
    <header>
-    <nav>
-        <picture>
-            <a href="../../index.html">
-            <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
-        </picture>
-        <ul class="nav-bar">
-          <li>
-            <a href="../shop/shop.html">VER TIENDA</a>
-          </li>
-          <li>
-            <a href="../admin/admin.html">ADMIN</a>
-          </li>
-          <li>
-            <a href="../admin/login.html">SALIR</a>
-          </li>
-        </ul>
+    <nav class="navbar container">
+      <picture class="navbar__logo">
+        <a href="../../index.html">
+          <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
+      </picture>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a class="navbar__link" href="../shop/shop.html">VER TIENDA</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/create.html">ADMIN</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/login.html">SALIR</a>
+        </li>
+      </ul>
     </nav>
-</header>
+  </header>
 <!--Fin header-->
 <main>
 <section>
@@ -84,23 +84,26 @@
   No se ha seleccionado ningún archivo
    </main>
 </body>
-<footer> 
-    <section>
-       <ul>
-         <li>
-           <a href="../shop/shop.html">SHOP</a></li>
-           <li>
-             <a href="../admin/register.html">REGISTRARSE</a></li>
-           <li>
-             <a href="../admin/login.html">INGRESAR</a></li>
-           <li>
-          <a href="../admin/create.html">CONTACTO</a></li>
-       </ul>
-       <p>All rights reserved 2023 - Funkoshop &copy;</p>
-     
-      <picture>
-       <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-      </picture>
-     </section>
-  </footer>
+<footer class="footer">
+  <section class="navbar container">
+    <ul class="navbar__item">
+      <li class="navbar__item">
+        <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+      </li>
+      <li class="navbar__item">
+        <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+      </li>
+      <li class="navbar__item">
+        <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
+      </li>
+      <li class="navbar__item">
+        <a class="navbar__link href=" create.html">CONTACTO</a>
+      </li>
+    </ul>
+    <picture>
+      <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+    </picture>
+  </section>
+  <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
 </html>

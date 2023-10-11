@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INGRESAR A MI CUENTA</title>
-    <link rel="stylesheet" href="../../css/login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INGRESAR A MI CUENTA</title>
+  <link rel="stylesheet" href="../../css/index.css">
 </head>
+
 <body>
-    <!--Inicio header-->
-    <header>
-      <nav>
-          <picture>
-              <a href="../../index.html">
-              <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
-          </picture>
-          <ul class="nav-bar">
-            <li>
-              <a href="../shop/shop.html">VER TIENDA</a>
-            </li>
-            <li>
-              <a href="../admin/admin.html">ADMIN</a>
-            </li>
-            <li>
-              <a href="../admin/login.html">SALIR</a>
-            </li>
-          </ul>
-      </nav>
+  <!--Inicio header-->
+  <header>
+    <nav class="navbar container">
+      <picture class="navbar__logo">
+        <a href="../../index.html">
+          <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
+      </picture>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a class="navbar__link" href="../shop/shop.html">VER TIENDA</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/create.html">ADMIN</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/login.html">SALIR</a>
+        </li>
+      </ul>
+    </nav>
   </header>
-<!--Fin header-->
-<main>
+  <!--Fin header-->
+  <main>
     <h1>INGRESAR A MI CUENTA</h1>
-<h1>Formulario</h1>
+    <h1>Formulario</h1>
 
     <form action="" method="get" enctype="application/x-www-form-urlencoded">
       <div>
         <label for="email">Email: </label>
-        <input
-          required
-          type="text"
-          name="email"
-          id="email"
-          placeholder="johndoe@correo.com"
-          value=""
-          readonly
-        />
+        <input required type="text" name="email" id="email" placeholder="johndoe@correo.com" value="" readonly />
       </div>
 
       <div>
@@ -57,31 +51,29 @@
       <button type="submit">Recordarme</button>
       <button type="submit">Olvide mi contraseña</button>
     </form>
-  </body>
-</html>
-
-
-</main>
-<footer>
-   
-  <section>
-      <ul>
-        <li>
-          <a href="../shop/shop.html">SHOP</a></li>
-          <li>
-            <a href="../admin/register.html">REGISTRARSE</a></li>
-          <li>
-            <a href="../admin/login.html">INGRESAR</a></li>
-          <li>
-         <a href="../admin/create.html">CONTACTO</a></li>
+  </main>
+  <footer class="footer">
+    <section class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link href=" create.html">CONTACTO</a>
+        </li>
       </ul>
-      <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    
-    <picture>
-      <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-    </picture>
-  </section>
- </footer>
-
+      <picture>
+        <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+      </picture>
+    </section>
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+  </footer>
 </body>
+
 </html>

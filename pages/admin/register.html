@@ -1,73 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CREA TU CUENTA</title>
-    <link rel="stylesheet" href="../../css/register.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CREA TU CUENTA</title>
+  <link rel="stylesheet" href="../../css/index.css">
 </head>
+
 <body>
-<!--Inicio header-->
-<header>
-  <nav>
-      <picture>
-          <a href="../../index.html">
+  <!--Inicio header-->
+  <header>
+    <nav class="navbar container">
+      <picture class="navbar__logo">
+        <a href="../../index.html">
           <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
       </picture>
-      <ul class="nav-bar">
-        <li>
-          <a href="../shop/shop.html">VER TIENDA</a>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a class="navbar__link" href="../shop/shop.html">VER TIENDA</a>
         </li>
-        <li>
-          <a href="../admin/create.html">ADMIN</a>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/create.html">ADMIN</a>
         </li>
-        <li>
-          <a href="../admin/login.html">SALIR</a>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/login.html">SALIR</a>
         </li>
       </ul>
-  </nav>
-</header>
-<!--Fin header-->
+    </nav>
+  </header>
+  <!--Fin header-->
 
 
-    <main>
-        <h1> CREA TU CUENTA</h1>
-   
-<h2>Completa el formulario para ser parte del mundo de los Funkos</h2>
-<h1>Formulario</h1>
+  <main>
+    <h1> CREA TU CUENTA</h1>
+
+    <h2>Completa el formulario para ser parte del mundo de los Funkos</h2>
+    <h1>Formulario</h1>
 
     <form action="" method="get" enctype="application/x-www-form-urlencoded">
       <div>
         <label for="nombre">Nombre: </label>
-        <input
-          required
-          type="text"
-          name="nombre"
-          id="nombre"
-          placeholder="John"
-          
-          readonly
-        />
+        <input required type="text" name="nombre" id="nombre" placeholder="John" readonly />
         <label for="apellido">Apellido: </label>
-        <input
-          required
-          type="text"
-          name="apellido"
-          id="apellido"
-          placeholder="Doe"
-        
-          readonly
-        />
+        <input required type="text" name="apellido" id="apellido" placeholder="Doe" readonly />
         <label for="email">Email: </label>
-        <input
-          required
-          type="text"
-          name="email"
-          id="email"
-          placeholder="johndoe@correo.com"
-        
-          readonly
-        />
+        <input required type="text" name="email" id="email" placeholder="johndoe@correo.com" readonly />
       </div>
 
       <div>
@@ -79,54 +57,42 @@
       </div>
 
       <div>
-    
-        <label for =" terminosycondiciones" >Terminos y condiciones: </label>
-        <select name=" acepto" id =" acepto" >
-        
-          <option  value ="si " >si</option >
-          <option  value =" no" > no</option >
-      
+
+        <label for=" terminosycondiciones">Terminos y condiciones: </label>
+        <select name=" acepto" id=" acepto">
+
+          <option value="si ">si</option>
+          <option value=" no"> no</option>
+
         </select>
       </div>
 
       <!-- <input type="submit" value="Enviar"> -->
       <button type="submit">Registrar</button>
     </form>
-  </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-</main>
-<footer>
-   
-  <section>
-      <ul>
-        <li>
-          <a href="../shop/shop.html">SHOP</a></li>
-          <li>
-            <a href="../admin/register.html">REGISTRARSE</a></li>
-          <li>
-            <a href="../admin/login.html">INGRESAR</a></li>
-          <li>
-         <a href="create.html">CONTACTO</a></li>
+  </main>
+  <footer class="footer">
+    <section class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link href=" create.html">CONTACTO</a>
+        </li>
       </ul>
-      <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    
-    <picture>
-      <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-    </picture>
-  </section>
- </footer>
-
+      <picture>
+        <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+      </picture>
+    </section>
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+  </footer>
 </body>
+
 </html>
