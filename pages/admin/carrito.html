@@ -67,10 +67,9 @@
               </div>
           </div>
           <div class="item__cart">
-
-            <button id="subtract" class="item__quantity" type="button">-</button>
+            <button id="subtract" class="item__quantitysubtract" type="button">-</button>
             <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
-            <button id="add" class="item__quantity" type="button">+</button>
+            <button id="add" class="item__quantityadd" type="button">+</button>
           </div>
           <div class="cart-table__price">
               <p class="cart-table__total-price">$ 3599,98</p>
@@ -90,17 +89,20 @@
                   <p class="funko__text-price">Precio: $1799,99</p>
               </div>
           </div>     
-          <div class="item__cart">
-
-            <button id="subtract" class="item__quantity" type="button">-</button>
-            <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
-            <button id="add" class="item__quantity" type="button">+</button>
-          </div>
+           <div class="item__cart">
+            
+              <button id="add" class="item__quantityadd" type="button">+</button>
+              <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
+              <button id="subtract" class="item__quantitysubtract" type="button">-</button>
+              
+              
+           </div>
           <div class="cart-table__total">
               <p>$ 1799,99</p>
           </div>
           <button class="cart-table__button"><img class="cart-table__button-img"
-                  src="../../img/icons/estex.png"></button>
+                  src="../../img/icons/estex.png">
+         </button>
       </div>
   </div>
 
@@ -133,24 +135,25 @@
       </article>        
   </section>            
  </main>
-    <footer>
-   
-      <section>
-          <ul>
-            <li>
-              <a href="../shop/shop.html">SHOP</a></li>
-              <li>
-                <a href="../admin/register.html">INGRESAR</a></li>
-             <li>
-             <a href="../admin/create.html">CONTACTO</a></li>
-          </ul>
-          <p>All rights reserved 2023 - Funkoshop &copy;</p>
-        
+ <footer class="footer">
+    <nav class="navbar container">
+        <ul class="navbar__item">
+            <li class="navbar__item">
+                <a class="navbar__link" href="../../pages/shop/shop.html">SHOP</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../../pages/admin/register.html">INGRESAR</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="../../pages/admin/create.html">CONTACTO</a>
+            </li>
+        </ul>
         <picture>
-          <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
         </picture>
-      </section>
-     </footer>
+    </nav>
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+  </footer>
     
      <script src="../../js/item.js"></script>   
 </body>
