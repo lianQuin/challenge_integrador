@@ -24,19 +24,21 @@
 .item__quantityadd{
     width:16px;
     height: 16px;
-     background-color: var(--primary-solid);
+     background-color: var(--primary-900);
      color: #FFF;
-     border-color: var(--light-color);
+     border-color: var(--light-bg-solid);
+    text-align: center;
      
      
 }
 .item__quantitysubtract{
     width: 16px;
     height: 16px;
-    background-color: var(--primary-solid);
+    background-color: var(--primary-900);
     color: #FFF;
     display: flex;
-    border-color: var(--light-color);
+    border-color: var(--light-bg-solid);
+    text-align: center;
 }
 
 .item__cart{
