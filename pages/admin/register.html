@@ -30,47 +30,72 @@
     </nav>
   </header>
   <!--Fin header-->
-
-
   <main>
-    <h1> CREA TU CUENTA</h1>
+    <div class="login">
+        <h1>
+            CREA TU CUENTA
+        </h1>
+        <h3>
+            Completa el formulario para ser parte del mundo de los Funkos
+        </h3>
+        <form action="registrarDatos" method="post">
+                <div class="email">
+                    <h4>Nombre:</h4> 
+                    <div class="emailInput">
+                        <input type="text" name="nombre" placeholder="John">
+                        <hr>
+                    </div>       
+                
+                </div>
+                
+                <br>
+                <div class="email">
+                    <h4>Apellido:</h4>
+                    <div class="emailInput">
+                        <input type="text" name="apellido" placeholder="Doe">
+                        <hr>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="email">
+                    <h4>Email:</h4>
+                    <div class="emailInput">
+                        <input type="email" name="email" placeholder="johndoe@correo.com">
+                        <hr>
+                    </div>
+                </div>
+                <br>
+                <div class="email">
+                    <h4>Contraseña:</h4>
+                    <div class="emailInput">
+                        <input type="password" name="contraseña" placeholder="● ● ● ● ● ● ● ● ● ●">
+                        <hr>
+                    </div>
+                </div>
+                <br>
+                <div class="email">
+                    <h4>Repetir Contraseña:</h4>
+                    <div class="emailInput">
+                        <input type="password" name="contraseña" placeholder="● ● ● ● ● ● ● ● ● ● ●">
+                        <hr>
+                    </div>
+                </div>
+                <div class="recordar">
+                    <input class="submit" type="submit" value="Ingresar">
+                    <input type="checkbox" class="check" name="recordar" >
+                    <h4>Acepto</h4>
+                    <h5 class="cuotas">Términos y condiciones</h5>
+                    
+                </div>
+                
+            </form> 
+            
+        
+    </div>
+</main>
 
-    <h2>Completa el formulario para ser parte del mundo de los Funkos</h2>
-    <h1>Formulario</h1>
-
-    <form action="" method="get" enctype="application/x-www-form-urlencoded">
-      <div>
-        <label for="nombre">Nombre: </label>
-        <input required type="text" name="nombre" id="nombre" placeholder="John" readonly />
-        <label for="apellido">Apellido: </label>
-        <input required type="text" name="apellido" id="apellido" placeholder="Doe" readonly />
-        <label for="email">Email: </label>
-        <input required type="text" name="email" id="email" placeholder="johndoe@correo.com" readonly />
-      </div>
-
-      <div>
-        <label for="password">Contraseña: </label>
-        <input type="password" name="password" id="password" />
-
-        <label for="password">Repita contraseña: </label>
-        <input type="password" name="password" id="password" />
-      </div>
-
-      <div>
-
-        <label for=" terminosycondiciones">Terminos y condiciones: </label>
-        <select name=" acepto" id=" acepto">
-
-          <option value="si ">si</option>
-          <option value=" no"> no</option>
-
-        </select>
-      </div>
-
-      <!-- <input type="submit" value="Enviar"> -->
-      <button type="submit">Registrar</button>
-    </form>
-  </main>
+ 
   <footer class="footer">
     <section class="navbar container">
       <ul class="navbar__item">
