@@ -1,128 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/branding/isotype.svg" type="image/x-icon">
     <title>CREAR NUEVO ITEM</title>
     <link rel="stylesheet" href="../../css/index.css">
 </head>
+
 <body>
-   <!--Inicio header-->
-   <header>
-    <nav class="navbar container">
-        <picture class="navbar__logo">
-            <a href="../../index.html">
-            <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
-        </picture>
-        <ul class="navbar__menu">
-            <li class="navbar__item with-submenu">
-                <a class="navbar__link with-icon" href="../../pages/shop/shop.html">SHOP<iconify-icon
-                        icon="tabler:chevron-down"></iconify-icon></a>
-                <ul class="submenu">
-                    <li class="submenu__item">
-                        <a href="" class="submenu__link">Funkos</a>
-                    </li>
-                    <li class="submenu__item">
-                        <a href="" class="submenu__link">Remeras</a>
-                    </li>
-                    <li class="submenu__item">
-                        <a href="" class="submenu__link">Llaveros</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="../../pages/admin/create.html">CONTACTO</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link" href="../../pages/admin/login.html">LOGIN</a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__cart" href="../../pages/carrito.html">
-                    <img src="../../img/icons/cart-icon.svg" alt="icono de carrito"><span id="cuenta-carrito">0</span>
-                </a>
+    <!--Inicio header-->
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../../pages/shop/shop.html">SHOP<iconify-icon
+                            icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/admin/create.html">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/admin/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="../../pages/carrito.html">
+                        <img src="../../img/icons/cart-icon.svg" alt="icono de carrito"><span
+                            id="cuenta-carrito">0</span>
+                    </a>
 
-            </li>
-        </ul>
-    </nav>
-</header>
-<!--Fin header-->   
- <main>
-  <h1>CREAR NUEVO ITEM</h1>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin header-->
+    <main>
+        <h1>CREAR NUEVO ITEM</h1>
 
 
-  <div>
-    <label for="categoria">Categoria: <form action=""><select class="selectores" name="seleccionar" id="seleccionar" placeholder="Seleccionar"><option value="">Seleccionar</option></select></form></label>
-   
-  </div>        
-  <div>
-      <p>Licencia:</p>
-      <form action="">
-          <select class="selectores" name="seleccionar" id="seleccionar" placeholder="Seleccionar">
-            <option value="">Seleccionar</option>
-          </select>
-      </form>
-  </div>
-  <div>
-     
-      <label for="">Nombre del producto: <input type="text" name="" placeholder="Kakashi Hatake Shippuden Saga"></label>
-                                 
-  </div>
-  <div> <!--VER TEMA FILAS Y COLUMNAS DEL TEXTAREA-->
-    <textarea name="descripción" rows="10" cols="40">Descripción del producto</textarea>
-  </div>
-  <div>
-      <!--VER EL TYPE DE INT-->
-     <label for="">SKU: <input type="text" name="" placeholder="SSK111AB001"></label>      
-      <label for="">Precio: <input type="int" name="" placeholder="$0.000,00"></label>
-      <label for="">Stock: <input type="int" name="" placeholder="0"></label>  
-                             
-  </div>
-  <div>
-    <label for="">Descuento: <input type="int" name="" placeholder="0%"></label>
-      <label for="">Cuotas: <form action=""><select class="selectores" name="cuotas" id="cuotas" placeholder="3 Cuotas sin interés"><option value="">3 Cuotas sin interés</option></select></label>        
-                             
-  </div>
-  <div>
-<label for="imagenes">Imagenes: <button class="elegir-archivo">Elegir archivos</button></label>
-<p>No se ha seleccionado ningún archivos</p>
-<!--aca falta el formulario
+        <div>
+            <label for="categoria">Categoria: <form action=""><select class="selectores" name="seleccionar"
+                        id="seleccionar" placeholder="Seleccionar">
+                        <option value="">Seleccionar</option>
+                    </select></form></label>
+
+        </div>
+        <div>
+            <p>Licencia:</p>
+            <form action="">
+                <select class="selectores" name="seleccionar" id="seleccionar" placeholder="Seleccionar">
+                    <option value="">Seleccionar</option>
+                </select>
+            </form>
+        </div>
+        <div>
+
+            <label for="">Nombre del producto: <input type="text" name=""
+                    placeholder="Kakashi Hatake Shippuden Saga"></label>
+
+        </div>
+        <div> <!--VER TEMA FILAS Y COLUMNAS DEL TEXTAREA-->
+            <textarea name="descripción" rows="10" cols="40">Descripción del producto</textarea>
+        </div>
+        <div>
+            <!--VER EL TYPE DE INT-->
+            <label for="">SKU: <input type="text" name="" placeholder="SSK111AB001"></label>
+            <label for="">Precio: <input type="int" name="" placeholder="$0.000,00"></label>
+            <label for="">Stock: <input type="int" name="" placeholder="0"></label>
+
+        </div>
+        <div>
+            <label for="">Descuento: <input type="int" name="" placeholder="0%"></label>
+            <label for="">Cuotas: <form action=""><select class="selectores" name="cuotas" id="cuotas"
+                        placeholder="3 Cuotas sin interés">
+                        <option value="">3 Cuotas sin interés</option>
+                    </select></label>
+
+        </div>
+        <div>
+            <label for="imagenes">Imagenes: <button class="elegir-archivo">Elegir archivos</button></label>
+            <p>No se ha seleccionado ningún archivos</p>
+            <!--aca falta el formulario
 Imágenes:
 Elegir archivos
 No se ha seleccionado ningún archivo-->
 
 
-</div>
+        </div>
 
 
-<div class="botones">
-  <button class="boton">Agregar producto</button>
-  <button class="boton">Limpiar</button>
-</div>
-<!--aca falta el formulario-->
-Imágenes:
-Elegir archivos
-No se ha seleccionado ningún archivo
- </main>
- <footer class="footer">
-  <nav class="navbar container">
-      <ul class="navbar__item">
-          <li class="navbar__item">
-              <a class="navbar__link" href="../shop/shop.html">SHOP</a>
-          </li>
-          <li class="navbar__item">
-              <a class="navbar__link" href="../admin/register.html">INGRESAR</a>
-          </li>
-          <li class="navbar__item">
-              <a class="navbar__link" href="../admin/create.html">CONTACTO</a>
-          </li>
-      </ul>
-      <picture>
-          <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-      </picture>
-  </nav>
-  <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-</footer>
-<script src="../../js/item.js"></script>   
+        <div class="botones">
+            <button class="boton">Agregar producto</button>
+            <button class="boton">Limpiar</button>
+        </div>
+        <!--aca falta el formulario-->
+        Imágenes:
+        Elegir archivos
+        No se ha seleccionado ningún archivo
+    </main>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/register.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/create.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+    <script src="../../js/item.js"></script>
 </body>
+
 </html>
-   
