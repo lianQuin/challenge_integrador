@@ -36,13 +36,13 @@
                     </ul>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../../pages/admin/create.html">CONTACTO</a>
+                    <a class="navbar__link" href="../admin/create.html">CONTACTO</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../../pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="../admin/login.html">LOGIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__cart" href="../../pages/carrito.html">
+                    <a class="navbar__cart" href="../admin/carrito.html">
                         <img src="../../img/icons/cart-icon.svg" alt="icono de carrito"><span
                             id="cuenta-carrito">0</span>
                     </a>
@@ -54,11 +54,15 @@
     <main>
         <!--Comienza la tabla-->
         <form action="">
-            <img src="../../img/icons/search_icon.svg" alt="Lupa">
-            <input type="search" placeholder="código, nombre o categoria">
+            <img class="layout" src="../../img/icons/search_icon.svg" alt="Lupa">
+            <div class="searchBar">
+            <input class="content"  type="search" placeholder="código, nombre o categoria"></div>
         </form>
+        <div class="admin">
         <h1>LISTADO DE PRODUCTOS</h1>
-        <div>AGREGAR</div>
+        <div class="agregar"><p>AGREGAR </p>
+            <img class="plus-box" src="../../img/icons/mdi_plus-box (1).svg" alt="mas">
+        </div>
         <table>
 
             <thead>
@@ -69,6 +73,8 @@
                     <th>Código</th>
                     <th>Nombre del Producto</th>
                     <th>Categoria</th>
+                    <th>   </th>
+                    <th>   </th>
                 </tr>
             </thead>
             <tbody>
@@ -179,6 +185,7 @@
                 </tr>
             </tbody>
         </table>
+    </div>   
         <!-- TERMINA LA TABLA -->
     </main>
     <footer class="footer">

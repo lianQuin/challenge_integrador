@@ -1,0 +1,88 @@
+.layout{width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    width: 42px;
+height: 42px;
+top: 182.28px;
+left: 110px;
+padding: 5.25px, 5.95px, 5.99px, 5.25px;
+border-radius: 6px;
+
+}
+.searchBar{
+
+width: 529.76px;
+height: 44.28px;
+top: 180px;
+left: 171.12px;
+border-radius: 6px;
+border: 2px solid #30343F;
+}
+.content{
+    width: 337.869px;
+height: 24px;
+flex-shrink: 0;
+    width: 337.87px;
+height: 24px;
+top: 190.14px;
+left: 194.99px;
+font-family: Inter;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #B9B9B9;
+border-color: white;
+
+}
+.plus-box{box-sizing: border-box;
+
+    width: 52px;
+height: 52px;
+flex-shrink: 0;
+
+
+}
+.admin{
+    width: 1440px;
+height: 1568px;
+
+}
+h1{width: 242px;
+    height: 39px;
+    top: 260px;
+    left: 110px;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0.04em;
+    text-align: start;
+}
+.agregar{font-size: 24px;
+    line-height: 29px;
+    color: #1F1F1F;
+    text-align: right;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px; 
+}
+
+
+p{ font-size: 24px;
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    letter-spacing: 0.96px; 
+}
+th{width: 81px;
+height: 29px;
+top: 34px;
+left: 13.23px;
+
+}
