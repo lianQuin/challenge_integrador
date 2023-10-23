@@ -1,1 +1,163 @@
 
+.main{
+    width: 827.63px;
+    height: 669.3px;
+    margin-left: 250px;
+    margin-top: 30px;
+
+}
+
+.editar-item {        
+    font-family: 'Raleway';
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.contenedor-div{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.div-1{
+    display: flex;
+}
+
+.categoria{
+    font-family: 'Raleway';
+    font-size: 24px;
+
+}
+
+.licencia{
+    font-family: 'Raleway';
+    font-size: 24px;
+}
+
+.subtitulos{
+    color: var(--color-4);
+    font-family: 'Raleway';
+    font-size: 24px;
+   
+}
+
+.caracteristicas{
+    width: 662.4px;
+    height: 29px;
+    display: flex;
+    margin-bottom: 35px;
+    
+}
+
+.textarea {
+    width: 827.63px;
+    margin: 30px 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 4px;
+    font-family: Inter;
+    font-size: 24px;
+}
+
+.selectores{
+    border-radius: 5px;
+    width: 243.03px;
+    height: 44.28px;
+    padding-left: 10px;
+}
+
+.pago-completo{
+    display: flex;
+    align-items: center;
+}
+
+.selectores-cuotas{
+    border-radius: 5px;
+    width: 346px;
+    height: 44px;
+    text-align: left;
+    padding-left: 10px;
+       
+}
+
+.input-sinborde-maslargo{
+    border: none;
+    border-bottom: 1px solid var(--color-3) ;
+    width: 296px;
+    height: 27.36px;
+    text-align: center;    
+}
+
+.input-sinborde-largo {
+    border: none;
+    border-bottom: 1px solid var(--color-3) ;
+    width: 130.26px;
+    height: 27.36px;
+    text-align: left;
+}
+
+.input-sinborde-corto {
+    border: none;
+    border-bottom: 1px solid var(--color-3) ;
+    width: 55px;
+    height: 27.36px;
+    text-align: center;
+}
+
+.div-imagenes {
+    display: flex;
+    width: 519.73px;
+    height: 29px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pago {
+    display: flex;
+}
+
+.elegir-archivo{
+    border-radius: 5px;
+    width: 125.24px;
+    height: 25.29px;
+    font-family: Arial, Helvetica, sans-serif;    
+    font-size: 14px;
+}
+
+.imagen-producto {
+    display: flex;
+}
+
+.imagen-funko {
+    width: 150px;
+    height: 173px;
+
+}
+
+.leyenda-imagen {
+    font-family: Raleway;
+    font-size: 20px;
+    color: var(--color-4);
+}
+
+.boton{       
+    background-color: var(--color-3);
+    color: var(--color-2);
+    width: 175px;
+    height: 44.33px;
+    align-items: center;
+}
+
+.div-imagenes {
+    display: flex;
+    width: 519.73px;
+    height: 29px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.texto-imagenes {
+    font-family: 'Raleway';
+    font-size: 14px;
+}
