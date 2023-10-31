@@ -1,0 +1,96 @@
+.form__admin{
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+    height: 42px;
+    gap: 1%;
+}
+
+.form__admin img{
+    width: 42px;
+}
+
+.form__search {
+    width: 100%;
+    height: 100%;
+    display: inherit;
+    align-items: center;
+}
+
+.form__search input{
+    width: 40%;
+    height: 90%;
+    border: 2px solid var(--dark-bg-solid);
+    border-radius: 5px;
+}
+
+.form__search input::placeholder,
+.form__search input:not(:placeholder-shown){
+    text-indent: 10px;
+    font-family: var(--alternative-font);
+    font-size: var(--font-small);
+}
+
+.admin__contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.admin__productos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.admin__productos h1{
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    font-size: var(--font-jumbo);
+}
+
+.productos__agregar{
+    display: inherit;
+    align-items: center;
+    gap: 15px;
+}
+
+.productos__agregar p{
+    font-size: var(--font-large);
+    font-weight: 700;
+}
+
+.productos__agregar img{
+    width: 52px;
+    cursor: pointer;
+}
+
+.admin__contenido table{
+    width: 100%;
+    padding-left: 3%;
+    font-size: var(--font-large);
+}
+
+.admin__contenido table thead tr th{
+    text-align: start;
+}
+
+.admin__contenido table tbody tr td:first-child{
+    text-align: center;
+}
+
+.admin__contenido table tbody{
+    font-weight: 500;
+}
+
+.admin__contenido table a{
+    display: contents;
+}
+
+.admin__contenido table img{
+    height: 34px;
+}
