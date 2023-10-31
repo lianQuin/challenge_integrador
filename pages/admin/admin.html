@@ -21,48 +21,33 @@
             </picture>
             <ul class="navbar__menu">
                 <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="../../pages/shop/shop.html">SHOP<iconify-icon
-                            icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Llaveros</a>
-                        </li>
-                    </ul>
+                    <a class="navbar__link" href="../../pages/shop/shop.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../admin/create.html">CONTACTO</a>
+                    <a class="navbar__link" href="#">ADMIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../admin/login.html">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="../admin/carrito.html">
-                        <img src="../../img/icons/cart-icon.svg" alt="icono de carrito"><span
-                            id="cuenta-carrito">0</span>
-                    </a>
-
+                    <a class="navbar__link" href="../admin/login.html">SALIR</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <!--Comienza la tabla-->
-        <form action="">
-            <img class="layout" src="../../img/icons/search_icon.svg" alt="Lupa">
-            <div class="searchBar">
-            <input class="content"  type="search" placeholder="código, nombre o categoria"></div>
+        <form action="" class="form__admin container">
+            <img class="form__img" src="../../img/icons/search_icon.svg" alt="Lupa">
+            <div class="form__search">
+                <input type="search" placeholder="código, nombre o categoria">
+            </div>
         </form>
-        <div class="admin">
-        <h1>LISTADO DE PRODUCTOS</h1>
-        <div class="agregar"><p>AGREGAR </p>
-            <img class="plus-box" src="../../img/icons/mdi_plus-box (1).svg" alt="mas">
-        </div>
+        <div class="admin__contenido">
+        <div class="admin__productos">
+            <h1>LISTADO DE PRODUCTOS</h1>
+            <div class="productos__agregar">
+                <p>AGREGAR</p>
+                <img class="plus-box" src="../../img/icons/mdi_plus-box (1).svg" alt="mas">
+            </div>
+        </div> 
         <table>
 
             <thead>
@@ -84,8 +69,7 @@
                     <td>Baby Yoda Blueball</td>
                     <td>STARS WARS</td>
                     <td><a href="edit.html"><img src="../../img/icons/edit_pencil.svg"></a></td>
-                    <td><img src="../../img/icons/delete_trash.svg" alt="delete_trash">
-                    </td>
+                    <td><img src="../../img/icons/delete_trash.svg" alt="delete_trash"></td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -185,7 +169,8 @@
                 </tr>
             </tbody>
         </table>
-    </div>   
+        </div>
+      
         <!-- TERMINA LA TABLA -->
     </main>
     <footer class="footer">
@@ -195,7 +180,10 @@
                     <a class="navbar__link" href="../shop/shop.html">SHOP</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../admin/register.html">INGRESAR</a>
+                    <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
                 </li>
                 <li class="navbar__item">
                     <a class="navbar__link" href="../admin/create.html">CONTACTO</a>
