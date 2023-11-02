@@ -251,7 +251,15 @@
     letter-spacing: 1px;
 }
 
-
+#cuenta-carrito{
+    
+    background-color:var(--primary-solid) ;
+    border-radius: 100%;
+    display:inline-block;
+    width: 20px;
+    text-align: center;
+    position: absolute;
+}
 
 
 
