@@ -1,53 +1,13 @@
 
-#cuenta-carrito{
-    background-color:var(--primary-solid) ;
-    border-radius: 100%;
-    display:inline-block;
-    width: 20px;
-    line-height: 20px;
-    aspect-ratio: 1;
-    text-align: center;
-    position: absolute;
-}
-
-.item__cart{
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-
 .selectores{
     border-radius: 5px;
 }
 
-
 .elegir-archivo{
     border-radius: 5px;
     width: 125.24px;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: var(--base-font);    
 }
-
-
-.botones{
-    width: 384.14px;
-    height: 44.33px;
-    justify-content: space-between;
-}
-
-
-.boton{
-    background-color: var(--color-3);
-    color: var(--color-2);
-    width: 175px;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-
-
-
 
 
 .main{
@@ -59,7 +19,7 @@
 }
 
 .crear-item{
-    font-family: 'Raleway';
+    font-family: var(--alternative-font);
     font-size: 42px;
     margin-bottom: 30px;
 
@@ -70,25 +30,31 @@
     margin-bottom: 20px;
 }
 
-.div-1{
-    display: flex;
-}
-
 .categoria{
-    font-family: 'Raleway';
+    font-family: var(--alternative-font);
     font-size: 24px;
 
 }
 
 .licencia{
-    font-family: 'Raleway';
+    font-family: var(--alternative-font);
     font-size: 24px;
+    margin-left: 30px;
+}
+
+.selectores{
+    border-radius: 5px;
+    width: 243.03px;
+    height: 44.28px;
+    padding-left: 10px;
+    color: var(--light-color);
 }
 
 .subtitulos{
-    color: var(--color-4);
-    font-family: 'Raleway';
+    color: var(--dark-solid);
+    font-family: var(--alternative-font);
     font-size: 24px;
+    padding-right: 10px;
    
 }
 
@@ -106,19 +72,9 @@
     padding-top: 10px;
     padding-left: 10px;
     border-radius: 4px;
+    color: var(--light-color);
 }
 
-.selectores{
-    border-radius: 5px;
-    width: 243.03px;
-    height: 44.28px;
-    padding-left: 10px;
-}
-
-.pago-completo{
-    display: flex;
-    align-items: center;
-}
 
 .selectores-cuotas{
     border-radius: 5px;
@@ -131,52 +87,60 @@
 
 .input-sinborde-maslargo{
     border: none;
-    border-bottom: 1px solid var(--color-3) ;
-    width: 296px;
+    border-bottom: 1px solid var(--primary-solid) ;
+    width: 200px;
     height: 27.36px;
     text-align: center;
 }
 
 .input-sinborde-largo {
     border: none;
-    border-bottom: 1px solid var(--color-3) ;
-    width: 130.26px;
+    border-bottom: 1px solid var(--primary-solid) ;
+    width: 90px;
     height: 27.36px;
     text-align: left;
 }
 
 .input-sinborde-corto {
     border: none;
-    border-bottom: 1px solid var(--color-3) ;
-    width: 55px;
+    border-bottom: 1px solid var(--primary-solid) ;
+    width: 45px;
     height: 27.36px;
     text-align: center;
 }
+
+.pago-completo{
+    display: flex;
+    
+}
 .pago {
     display: flex;
+    align-items: center;
 }
 
 .elegir-archivo{
     border-radius: 5px;
     width: 125.24px;
     height: 25.29px;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: var(--base-font);    
     font-size: 14px;
+    background-color: var(--light-color);
 }
 
 .botones{
     width: 384.14px;
     height: 44.33px;
-    justify-content: space-between;
+   
 }
 
 .boton{
     background-color: var(--primary-solid);
-    color: var(--color-2);
+    color: var(--light-font-solid);
     width: 175px;
     height: 100%;
     justify-content: space-around;
     align-items: center;
+    margin-right: 15px;
 }
 
 .div-imagenes {
@@ -189,6 +153,7 @@
 }
 
 .texto-imagenes {
-    font-family: 'Raleway';
+    font-family: var(--alternative-font);
     font-size: 14px;
 }
+

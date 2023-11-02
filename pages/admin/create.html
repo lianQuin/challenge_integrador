@@ -18,32 +18,15 @@
                     <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
             </picture>
             <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="../../pages/shop/shop.html">SHOP<iconify-icon
-                            icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Llaveros</a>
-                        </li>
-                    </ul>
+               
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../pages/admin/create.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../../pages/admin/create.html">CONTACTO</a>
+                    <a class="navbar__link" href="../../pages/admin/login.html">ADMIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../../pages/admin/login.html">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="../../pages/carrito.html">
-                        <img src="../../img/icons/cart-icon.svg" alt="icono de carrito"><span
-                            id="cuenta-carrito">0</span>
-                    </a>
+                    <a class="navbar__cart" href="../../pages/carrito.html">SALIR</a>
 
                 </li>
             </ul>
@@ -54,24 +37,21 @@
         <h1 class="crear-item">CREAR NUEVO ITEM</h1>
 
       <div class="contenedor-div">
-        <div class="div-1">
             <label class="categoria" for="categoria">Categoria: 
-                <form action=""><select class="selectores" name="seleccionar"
+                <select class="selectores" name="seleccionar"
                         id="seleccionar" placeholder="Seleccionar">
                         <option value="">Seleccionar</option>
-                    </select></form></label>
-
-        </div>
-        <div class="div-1">
+                    </select></label>
+        
             <label class="licencia" for="">Licencia:
-            <form action=""><select class="selectores" name="seleccionar" 
+            <select class="selectores" name="seleccionar" 
                 id="seleccionar" placeholder="Seleccionar">
                     <option value="">Seleccionar</option>
                 </select>
-            </form></label>
-        </div>
-
+            </label>        
     </div>
+
+    
         <div>
 
             <label class="subtitulos" for=""><strong>Nombre del producto:</strong> <input class="input-sinborde-maslargo" type="text" name=""
@@ -83,15 +63,18 @@
         </div>
         <div class="caracteristicas">
             <!--VER EL TYPE DE INT-->
-            <label class="subtitulos" for=""><strong>SKU:</strong> <input class="input-sinborde-largo" type="text" name="" placeholder="SSK111AB001"></label>
-            <label class="subtitulos" for=""> <strong>Precio:</strong> <input class="input-sinborde-largo" type="int" name="" placeholder="$0.000,00"></label>
-            <label class="subtitulos" for=""><strong>Stock:</strong><input class="input-sinborde-corto" type="int" name="" placeholder="0"></label>
+            <label class="subtitulos" for=""><strong>SKU:</strong> 
+                <input class="input-sinborde-largo" type="text" name="" placeholder="SSK111AB001"></label>
+            <label class="subtitulos" for=""> <strong>Precio:</strong> 
+                <input class="input-sinborde-largo" type="int" name="" placeholder="$0.000,00"></label>
+            <label class="subtitulos" for=""><strong>Stock:</strong>
+                <input class="input-sinborde-corto" type="int" name="" placeholder="0"></label>
 
         </div>
-        <div class="pago-completo">
+    <div class="pago-completo">
         <div class="pago">
             <label class="subtitulos" for=""><strong>Descuento:</strong> <input class="input-sinborde-corto" type="int" name="" placeholder="0%"></label>
-            <label class="subtitulos" for=""><strong>Cuotas:</strong> <form action=""></label>
+            <label class="subtitulos" for=""><strong>Cuotas:</strong></label>
 
         </div>
         <div>
@@ -112,12 +95,16 @@
         </div>
              
     </main>
+ 
 
     <footer class="footer">
         <nav class="navbar container">
             <ul class="navbar__item">
                 <li class="navbar__item">
                     <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
                 </li>
                 <li class="navbar__item">
                     <a class="navbar__link" href="../admin/register.html">INGRESAR</a>
