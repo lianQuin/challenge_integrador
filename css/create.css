@@ -1,15 +1,4 @@
 
-.selectores{
-    border-radius: 5px;
-}
-
-.elegir-archivo{
-    border-radius: 5px;
-    width: 125.24px;
-    font-family: var(--base-font);    
-}
-
-
 .main{
     width: 827.63px;
     height: 669.3px;
@@ -20,8 +9,8 @@
 
 .crear-item{
     font-family: var(--alternative-font);
-    font-size: 42px;
-    margin-bottom: 30px;
+    font-size: var(--font-xlarge);
+    margin-bottom: var(--spacing-24);
 
 }
 
@@ -32,14 +21,8 @@
 
 .categoria{
     font-family: var(--alternative-font);
-    font-size: 24px;
+    font-size: var(--font-medium);
 
-}
-
-.licencia{
-    font-family: var(--alternative-font);
-    font-size: 24px;
-    margin-left: 30px;
 }
 
 .selectores{
@@ -53,7 +36,7 @@
 .subtitulos{
     color: var(--dark-solid);
     font-family: var(--alternative-font);
-    font-size: 24px;
+    font-size: var(--font-medium);
     padding-right: 10px;
    
 }
@@ -75,7 +58,6 @@
     color: var(--light-color);
 }
 
-
 .selectores-cuotas{
     border-radius: 5px;
     width: 346px;
@@ -87,60 +69,58 @@
 
 .input-sinborde-maslargo{
     border: none;
-    border-bottom: 1px solid var(--primary-solid) ;
-    width: 200px;
-    height: 27.36px;
+    border-bottom: 2px solid var(--primary-solid) ;
+    width: 20em;
     text-align: center;
+    margin-left: 1em;
 }
 
 .input-sinborde-largo {
     border: none;
-    border-bottom: 1px solid var(--primary-solid) ;
-    width: 90px;
-    height: 27.36px;
+    border-bottom: 2px solid var(--primary-solid) ;
+    width: 7em;
     text-align: left;
+    margin-left: 1em;
 }
 
 .input-sinborde-corto {
     border: none;
-    border-bottom: 1px solid var(--primary-solid) ;
-    width: 45px;
-    height: 27.36px;
+    border-bottom: 2px solid var(--primary-solid) ;
+    width: 4em;
     text-align: center;
+    margin-left: 1em;
 }
 
 .pago-completo{
     display: flex;
-    
-}
-.pago {
-    display: flex;
     align-items: center;
+    
 }
 
 .elegir-archivo{
     border-radius: 5px;
-    width: 125.24px;
-    height: 25.29px;
+    width: 10em;
     font-family: var(--base-font);    
-    font-size: 14px;
+    font-size: 0,2em;
     background-color: var(--light-color);
+    
 }
 
 .botones{
     width: 384.14px;
     height: 44.33px;
+    display: flex;
    
 }
 
 .boton{
     background-color: var(--primary-solid);
     color: var(--light-font-solid);
-    width: 175px;
-    height: 100%;
     justify-content: space-around;
     align-items: center;
     margin-right: 15px;
+    border: none;
+    padding: var(--spacing-6);
 }
 
 .div-imagenes {
@@ -156,4 +136,3 @@
     font-family: var(--alternative-font);
     font-size: 14px;
 }
-
